@@ -1,0 +1,3 @@
+<tr>
+  <td><%= @fullName() %></td>
+</tr>

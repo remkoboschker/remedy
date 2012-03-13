@@ -1,0 +1,10 @@
+<div class="pull-right">
+   <a class="btn" id="deleteEmployee"><i class="icon-minus"></i></a>
+ </div>
+<h3><%= @fullName() %> <%= @id %></h3>
+<hr>
+<div class="row-fluid">
+  <div class="span4" id="column1"></div>
+  <div class="span4" id="column2"></div>
+  <div class="span4" id="column3"></div>
+</div>

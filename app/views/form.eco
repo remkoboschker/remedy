@@ -1,0 +1,27 @@
+<header>
+  <a class="save">Save</a>
+  <a class="delete">Delete</a>
+</header>
+
+<div class="content">
+  <form>
+  
+    <label>
+      <span>initialen</span>
+      <input type="text" name="initialen" value="<%= @initialen %>">
+    </label>
+    
+    <label>
+      <span>voornaam</span>
+      <input type="text" name="voornaam" value="<%= @voornaam %>">
+    </label>
+
+    <label>
+      <span>achternaam</span>
+      <input type="text" name="achternaam" value="<%= @achternaam %>">
+    </label>
+
+
+    <button>Save</button>
+  </form>
+</div>

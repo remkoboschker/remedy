@@ -1,0 +1,9 @@
+<hr>
+<footer>
+  <ul class="nav nav-footer">
+    <li><a href='legal.html#voorwaarden'>voorwaarden</a></li>
+    <li><a href='legal.html#privacy'>privacy</a></li>
+    <li><a href='legal.html#intellectual_property'>intellectueel eigendom</a></li>
+    <li><a href='index.html'>over de app</a></li>
+  </ul>
+</footer>
