@@ -10,10 +10,10 @@ class Form extends Spine.Controller
   constructor: ->
     super
     
-  render: (placeholder) ->
-    @html @template(placeholder)
+  render: () ->
+    @html @template()
     
-  template: (placeholder) -> 
-    require('views/tdInput')(placeholder)
+  template: () -> 
+    require('views/tdInput')(@value)
 
 module.exports = Form

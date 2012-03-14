@@ -16,9 +16,8 @@ class Table extends Spine.Controller
   render: (table) ->
     @html @template(table.label)
     for row in table.rows
-      @log row
-      tablerow = new TableRow
-      tablerow.render(row) 
+      tablerow = new TableRow(row: row)
+      tablerow.render() 
       @tbody.append tablerow.el 
       
   template: (item) ->

@@ -2,9 +2,7 @@ Spine = require('spine')
 Form  = require('controllers/form')
 
 class TableRow extends Spine.Controller
-  
-  
-  
+ 
   @editing = false
   
   tag: "tr"
@@ -23,19 +21,18 @@ class TableRow extends Spine.Controller
     super
     @render()
     
-  render: (row) ->
+  render: () ->
     # snap niet waarom row.value undefined is
-    @html @template(row)
+    @html @template(@row)
     
   template: (row) -> 
     require('views/tableRow')(row)
     
   edit: ->
     if not @editing
-      placeholder = @td.text()
       @td.empty()
-      @form = new Form
-      @form.render("")
+      @form = new Form(value: @row.value)
+      @form.render()
       @td.append @form.el
       @td.addClass('edit')
       @td.children().children().focus()
