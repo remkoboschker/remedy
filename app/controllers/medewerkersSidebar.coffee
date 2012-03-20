@@ -54,7 +54,4 @@ class MedewerkersSidebar extends Spine.Controller
        
     @navigate '/admin/medewerkers', item.id
     
-
-    
-    
 module.exports = MedewerkersSidebar

@@ -25,6 +25,8 @@ class MedewerkersFile extends Spine.Controller
     @mail      = new Table
     @address   = new Table
     @employee  = new Table
+    
+    #Medewerker.bind('refresh change', @render)
   
   render: ->
     @html require('views/file')(@item)
@@ -32,12 +34,13 @@ class MedewerkersFile extends Spine.Controller
 
     @telephone.render
       label: "telefoon"
+      id: @item.id 
       rows: [
-        {label: "prive", value: @item.tel_prive},
-        {label: "werk", value: @item.tel_werk}
+        {label: "prive", name: "tel_prive", type: "text"},
+        {label: "werk", name: "tel_werk", type: "text"}
         ]
     @column2.append @telephone.el
-
+    ###
     @ice.render
       label: "ice"
       rows: [
@@ -93,7 +96,7 @@ class MedewerkersFile extends Spine.Controller
         {label: "contract", value: @item.contract}
         ]
     @column3.append @employee.el
-
+    ###
   change: (params) =>
     @item = Medewerker.find(params.id)
     @render()

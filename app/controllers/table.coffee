@@ -16,7 +16,7 @@ class Table extends Spine.Controller
   render: (table) ->
     @html @template(table.label)
     for row in table.rows
-      tablerow = new TableRow(row: row)
+      tablerow = new TableRow(type: row.type, name: row.name, label: row.label, id: table.id)
       tablerow.render() 
       @tbody.append tablerow.el 
       
@@ -24,3 +24,4 @@ class Table extends Spine.Controller
     require('views/table')(item)
     
 module.exports = Table
+

@@ -1,1 +1,1 @@
-<input type="text" value="<%= @ %>"></input>
+<input type="<%= @type %>" name="<%= @name %>" value="<%= @item[@name] %>"></input>
