@@ -13,6 +13,8 @@ class Table extends Spine.Controller
   constructor: ->
     super
     
+    #@bind("change", @change)
+    
   render: (table) ->
     @html @template(table.label)
     for row in table.rows

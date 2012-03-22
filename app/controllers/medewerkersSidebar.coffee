@@ -48,10 +48,7 @@ class MedewerkersSidebar extends Spine.Controller
     @navigate '/admin/medewerkers', item.id
 
   new: ->
-    item = Medewerker.create( initialen: 'initialen', test: 'test', voornaam: 'voornaam', achternaam: 'achternaam', meisjesnaam: 'meisjesnaam', geboortedatum: 'geboortedatum', geslacht: 'geslacht', bsn: 'bsn', legitimatie: 'legitimatie', profielfoto: 'profielfoto', tel_werk: 'tel_werk', tel_prive: 'tel_prive',  mail_werk: 'mail_werk', mail_prive: 'mail_prive', ice_tel: 'ice_tel', ice_naam: 'ice_naam', ice_relatie: 'ice_relatie', straat: 'straat', huisnummer: 'huisnummer', huisnummer_toevoeging: 'huisnummer_toevoeging', postcode: 'postcode', woonplaats: 'woonplaats', land: 'land', rol: 'rol', bankrekening: 'bankrekening', in_dienst: 'in_dienst', uit_dienst: 'uit_dienst', cv: 'cv', contract: 'contract')
-    
-    test = Employee.create()
-       
+    item = Medewerker.create( initialen: 'initialen', voornaam: 'voornaam', achternaam: 'achternaam', meisjesnaam: 'meisjesnaam', geboortedatum: 'dd/mm/jjjj', geslacht: 'geslacht', bsn: 'bsn', legitimatie: 'legitimatie', profielfoto: 'upload', tel_werk: 'tel_werk', tel_prive: 'tel_prive',  mail_werk: 'mail_werk', mail_prive: 'mail_prive', ice_tel: 'ice_tel', ice_naam: 'ice_naam', ice_relatie: 'ice_relatie', straat: 'straat', huisnummer: 'huisnummer', huisnummer_toevoeging: 'huisnummer_toevoeging', postcode: '1234 AB', woonplaats: 'woonplaats', land: 'land', rol: 'rol', bankrekening: 'bankrekening', in_dienst: 'dd/mm/jjjj', uit_dienst: 'dd/mm/jjjj', cv: 'upload', contract: 'upload')   
     @navigate '/admin/medewerkers', item.id
     
 module.exports = MedewerkersSidebar

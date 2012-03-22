@@ -31,7 +31,9 @@ class Spine.List extends Spine.Controller
     @el.children(sel)
     
   click: (e) ->
-    item = $(e.target).item()
-    @trigger("change", item)
+    item = $(e.target)
+    if not item.hasClass('item')
+      item = item.parent()
+    @trigger("change", item.item())
     
 module?.exports = Spine.List

@@ -1,5 +1,4 @@
 Spine = require('spine')
-Form  = require('controllers/form')
 Medewerker = require('models/medewerker')
 
 class TableRow extends Spine.Controller
@@ -15,8 +14,9 @@ class TableRow extends Spine.Controller
   
   events:
     "click td": "edit"
-    #"":"next"
-   # "focus_out td": "save"
+    "keyup input": "update"
+    "keydown input": "setModifier"
+    
   
   constructor: ->
     super
@@ -24,15 +24,36 @@ class TableRow extends Spine.Controller
   render: () ->
     @item = Medewerker.find(@id)
     @html require('views/tableRow')(@)
+    @input = require('views/tdInput')(@)
     
   edit: ->
     if not @editing
       @td.empty()
-      @form = new Form(value: @value, type: @type, name: @name, id: @id)
-      @form.render()
-      @td.append @form.el
+      @td.append @input
       @td.addClass('edit')
-      @td.children().children().focus()
+      @td.children().focus()
       @editing = true
+  
+  #pressing the return key saves the input to the store and replaces the input with the td
+  #pressing shift-return saves the input and sets the input for the next table row; if there 
+  #are no table rows left, it will move to the next table
+
+  update: (e) ->
+    if e.keyCode is 13 # return
+      @item[@name] = @input.val()
+      @item.save()
+      @td.empty()
+      @td.removeClass()
+      @td.append @item[@name]
+      @editing = false
+      if @modifier
+        #@trigger nextRow bound to model
+        @modifier = false
+    
+  setModifier: (e) ->
+    if e.keyCode is 16 # shift
+      @modifier = true
+    
+  
 
 module.exports = TableRow

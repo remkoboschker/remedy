@@ -26,6 +26,8 @@ class MedewerkersFile extends Spine.Controller
     @address   = new Table
     @employee  = new Table
     
+    # @list.bind 'change', @change
+    
     #Medewerker.bind('refresh change', @render)
   
   render: ->
@@ -36,67 +38,72 @@ class MedewerkersFile extends Spine.Controller
       label: "telefoon"
       id: @item.id 
       rows: [
-        {label: "prive", name: "tel_prive", type: "text"},
-        {label: "werk", name: "tel_werk", type: "text"}
+        {label: "prive", name: "tel_prive"},
+        {label: "werk", name: "tel_werk"}
         ]
     @column2.append @telephone.el
-    ###
+  
     @ice.render
       label: "ice"
+      id: @item.id 
       rows: [
-        {label: "naam", value: @item.ice_naam},
-        {label: "telefoon", value: @item.ice_tel},
-        {label: "relatie", value: @item.ice_relatie}
+        {label: "naam", name: "ice_naam"},
+        {label: "telefoon", name: "ice_tel"},
+        {label: "relatie", name: "ice_relatie"}
         ]
     @column2.append @ice.el
 
     @person.render
       label: "persoon"
+      id: @item.id 
       rows: [
-        {label: "initialen", value: @item.initialen},
-        {label: "voornaam", value: @item.voornaam},
-        {label: "achternaam", value: @item.achternaam},
-        {label: "meisjesnaam", value: @item.meisjesnaam},
-        {label: "geboortedatum", value: @item.geboortedatum},
-        {label: "geslacht", value: @item.geslacht},
-        {label: "bsn", value: @item.bsn},
-        {label: "legitimatie", value: @item.legitimatie},
-        {label: "profielfoto", value: @item.profielfoto}
+        {label: "initialen", name: "initialen"},
+        {label: "voornaam", name: "voornaam"},
+        {label: "achternaam", name: "achternaam"},
+        {label: "meisjesnaam", name: "meisjesnaam"},
+        {label: "geboortedat", name: "geboortedatum"},
+        {label: "geslacht", name: "geslacht"},
+        {label: "bsn", name: "bsn"},
+        {label: "legitimatie", name: "legitimatie"},
+        {label: "profielfoto", name: "profielfoto"}
         ]    
     @column2.append @person.el
        
     @mail.render
       label: "email"
+      id: @item.id 
       rows: [
-        {label: "werk", value: @item.mail_werk},
-        {label: "prive", value: @item.mail_prive}
+        {label: "werk", name: "mail_werk"},
+        {label: "prive", name: "mail_prive"}
         ]
     @column3.append @mail.el
     
     @address.render
       label: "adres"
+      id: @item.id 
       rows: [
-        {label: "straat", value: @item.straat},
-        {label: "huisnummer", value: @item.huisnummer},
-        {label: "toevoeging", value: @item.huisnummer_toevoeging},
-        {label: "postcode", value: @item.postcode},
-        {label: "woonplaats", value: @item.woonplaats},
-        {label: "land", value: @item.land}
+        {label: "straat", name: "straat"},
+        {label: "huisnummer", name: "huisnummer"},
+        {label: "toevoeging", name: "huisnummer_toevoeging"},
+        {label: "postcode", name: "postcode"},
+        {label: "woonplaats", name: "woonplaats"},
+        {label: "land", name: "land"}
         ]
     @column3.append @address.el
     
     @employee.render
       label: "medewerker"
+      id: @item.id 
       rows: [
-        {label: "rol", value: @item.rol},
-        {label: "bankrekening", value: @item.bankrekening},
-        {label: "in dienst", value: @item.in_dienst},
-        {label: "uit dienst", value: @item.uit_dienst},
-        {label: "cv", value: @item.cv},
-        {label: "contract", value: @item.contract}
+        {label: "rol", name: "rol"},
+        {label: "bankrekening", name: "bankrekening"},
+        {label: "in dienst", name: "in_dienst"},
+        {label: "uit dienst", name: "uit_dienst"},
+        {label: "cv", name: "cv"},
+        {label: "contract", name: "contract"}
         ]
     @column3.append @employee.el
-    ###
+    
   change: (params) =>
     @item = Medewerker.find(params.id)
     @render()

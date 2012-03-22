@@ -14,6 +14,9 @@ class Medewerker extends Spine.Model
     return @all() unless query
     query = query.toLowerCase()
     @select (item) ->
-      item.id?.toLowerCase().indexOf(query) isnt -1 #or item.achternaam?.toLowerCase().indexOf(query) isnt -1
+      item.voornaam?.toLowerCase().indexOf(query) isnt -1 or 
+      item.achternaam?.toLowerCase().indexOf(query) isnt -1 or
+      item.postcode?.indexOf(query) isnt -1 or
+      item.geboortedatum?.indexOf(query) isnt -1
         
 module.exports = Medewerker
