@@ -4,7 +4,7 @@
 <h3><%= @fullName() %> <%= @id %></h3>
 <hr>
 <div class="row-fluid">
-  <div class="span4" id="column1"></div>
-  <div class="span4" id="column2"></div>
-  <div class="span4" id="column3"></div>
+  <div class="span4 column" id="column1"></div>
+  <div class="span4 column" id="column2"></div>
+  <div class="span4 column" id="column3"></div>
 </div>

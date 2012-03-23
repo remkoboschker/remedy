@@ -13,17 +13,19 @@ class Table extends Spine.Controller
   constructor: ->
     super
     
-    #@bind("change", @change)
-    
   render: (table) ->
-    @html @template(table.label)
+    @html require('views/table')(table.label)
     for row in table.rows
       tablerow = new TableRow(type: row.type, name: row.name, label: row.label, id: table.id)
-      tablerow.render() 
-      @tbody.append tablerow.el 
-      
-  template: (item) ->
-    require('views/table')(item)
+      tablerow.render()
+      tablerow.bind("nextRow", @nextRow)
+      @tbody.append tablerow.el
+    
+  nextRow: ->
+    if @.el.next().length isnt 0
+      @log "next row"
+    else
+      @log "end of table"
     
 module.exports = Table
 

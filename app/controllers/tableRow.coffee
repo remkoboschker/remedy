@@ -9,15 +9,15 @@ class TableRow extends Spine.Controller
   
   elements:
     "td": "td"
-    "th": "th"
     "input": "input"
   
   events:
-    "click td": "edit"
+    "click td": "setInput"
+    "focus": "setInput"
+    "blur input": "removeInput"
     "keyup input": "update"
     "keydown input": "setModifier"
     
-  
   constructor: ->
     super
     
@@ -26,34 +26,80 @@ class TableRow extends Spine.Controller
     @html require('views/tableRow')(@)
     @input = require('views/tdInput')(@)
     
-  edit: ->
+  setInput: ->
     if not @editing
       @td.empty()
       @td.append @input
       @td.addClass('edit')
       @td.children().focus()
       @editing = true
+      
+  removeInput: ->
+    @store()
+    if @td.has('input') isnt 0
+      @td.empty()
+      @td.removeClass()
+    @td.append @item[@name]
+    @editing = false
+    
+  store: ->
+    if @item[@name] isnt @input.val()
+      @item[@name] = @input.val()
+      @item.save()
   
   #pressing the return key saves the input to the store and replaces the input with the td
-  #pressing shift-return saves the input and sets the input for the next table row; if there 
-  #are no table rows left, it will move to the next table
+  #pressing shift-return or tab saves the input and sets the input for the next table row; if there 
+  #are no table rows left, it will move to the next table in the next column if need be.
+  #shift-back space moves back one row across tables and columns as well
 
   update: (e) ->
     if e.keyCode is 13 # return
-      @item[@name] = @input.val()
-      @item.save()
-      @td.empty()
-      @td.removeClass()
-      @td.append @item[@name]
-      @editing = false
-      if @modifier
-        #@trigger nextRow bound to model
-        @modifier = false
-    
+      e.target.blur()
+      if window.modifier
+        @nextField(@el)
+    if e.keyCode is 9 # tab
+      @nextField(@el)
+    if e.keyCode is 8 and window.modifier # backspace
+      @previousField(@el)
+    if e.keyCode is 16      
+      window.modifier = false
+      
   setModifier: (e) ->
     if e.keyCode is 16 # shift
-      @modifier = true
-    
-  
+      window.modifier = true #possibly not the neatest solution to attach modifier to the window needed because modifier would otherwise be local to the row and get lost when switching row
+    if ((e.keyCode is 8) and window.modifier) # prevent backspace when modifier is true
+      e.preventDefault()
+      return false
+    if ((e.keyCode is 9) and @editing) # prevent normal tab behaviour when editing
+      e.preventDefault()
+      return false
+          
+  nextField: (element) ->
+    if element.is('tr') and element.next().length isnt 0
+      element.next().focus()
+    else if element.next(':has(tbody > tr)').length isnt 0
+      element.next().find('tbody > tr').first().focus()
+    else if element.is('tr')
+      @nextField element.parents('table')
+    else if element.is('table')
+      @nextField element.parents('.column')
+    else if element.is('.column')
+      element.siblings(':has(table)').first().find('tbody > tr').first().focus()
+    else
+      throw 'unknown element in nextField'
+      
+  previousField: (element) ->
+    if element.is('tr') and element.prev().length isnt 0
+      element.prev().focus()
+    else if element.prev(':has(tbody > tr)').length isnt 0
+      element.prev().find('tbody > tr').last().focus()
+    else if element.is('tr')
+      @previousField element.parents('table')
+    else if element.is('table')
+      @previousField element.parents('.column')
+    else if element.is('.column')
+      element.siblings(':has(table)').last().find('tbody > tr').last().focus()
+    else
+      throw 'unknown element in previousField'
 
 module.exports = TableRow

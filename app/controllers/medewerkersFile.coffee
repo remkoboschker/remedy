@@ -9,6 +9,7 @@ class MedewerkersFile extends Spine.Controller
     
   events:
     "click #deleteEmployee": "delete"
+    "nextTable": "nextTable"
     
   elements:
     "#column1": "column1"
@@ -26,9 +27,7 @@ class MedewerkersFile extends Spine.Controller
     @address   = new Table
     @employee  = new Table
     
-    # @list.bind 'change', @change
     
-    #Medewerker.bind('refresh change', @render)
   
   render: ->
     @html require('views/file')(@item)
@@ -110,6 +109,9 @@ class MedewerkersFile extends Spine.Controller
   
   delete: -> 
     @item.destroy() if confirm('Weet je zeker dat je het bestand wil verwijderen?')
+    
+  nextTable: ->
+    @log 'nextTable'
     
     
 module.exports = MedewerkersFile
