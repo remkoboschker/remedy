@@ -1,7 +1,7 @@
 <div class="pull-right">
    <a class="btn" id="deleteEmployee"><i class="icon-minus"></i></a>
  </div>
-<h3><%= @fullName() %> <%= @id %></h3>
+<h3><%= @fullName() %></h3>
 <hr>
 <div class="row-fluid">
   <div class="span4 column" id="column1"></div>

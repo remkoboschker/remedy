@@ -21,8 +21,9 @@ class TableRow extends Spine.Controller
   constructor: ->
     super
     
-  render: () ->
-    @item = Medewerker.find(@id)
+  render: (type, attr, val) ->
+    @label = Medewerker.label[type][attr]
+    @val = val
     @html require('views/tableRow')(@)
     @input = require('views/tdInput')(@)
     
@@ -35,11 +36,11 @@ class TableRow extends Spine.Controller
       @editing = true
       
   removeInput: ->
-    @store()
+    #@store()
     if @td.has('input') isnt 0
       @td.empty()
       @td.removeClass()
-    @td.append @item[@name]
+    @td.append @val
     @editing = false
     
   store: ->

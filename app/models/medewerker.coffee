@@ -1,22 +1,34 @@
 Spine = require('spine')
+permissions = require('lib/permissions')
+labels = require('lib/labelsData')
 
 class Medewerker extends Spine.Model
-  @configure 'Medewerker', 'initialen', 'test', 'voornaam', 'achternaam','meisjesnaam', 'geboortedatum', 'geslacht', 'bsn', 'legitimatie', 'profielfoto', 'tel_werk', 'tel_prive', 'mail_werk', 'mail_prive', 'ice_tel', 'ice_naam', 'ice_relatie', 'straat', 'huisnummer', 'huisnummer_toevoeging', 'postcode', 'woonplaats', 'land', 'rol', 'bankrekening', 'in_dienst', 'uit_dienst', 'cv', 'contract'
+    
+  @configure 'Medewerker', 'personal', 'tel', 'mail', 'ice', 'address', 'employed', 'photo'
 
   @extend @Local
-
-  fullName: -> 
-    "#{ @initialen ?  'initialen'}
-     #{@achternaam ? 'achternaam'} 
-    (#{@voornaam ? 'voornaam'})"
+  
+  @can = permissions['admin']['employee']
+    
+  @label = labels['nl']['employee']
   
   @filter: (query) ->
     return @all() unless query
     query = query.toLowerCase()
     @select (item) ->
-      item.voornaam?.toLowerCase().indexOf(query) isnt -1 or 
-      item.achternaam?.toLowerCase().indexOf(query) isnt -1 or
-      item.postcode?.indexOf(query) isnt -1 or
-      item.geboortedatum?.indexOf(query) isnt -1
+      item.personal.givenName?.toLowerCase().indexOf(query) isnt -1 or 
+      item.personal.familyName?.toLowerCase().indexOf(query) isnt -1 or
+      item.address.postalcode?.indexOf(query) isnt -1 or
+      item.personal.dateOfBirth?.indexOf(query) isnt -1
+  
+  constructor: ->
+    super
+  
+  fullName: -> 
+    "#{ @initialen ?  'initialen'}
+     #{@achternaam ? 'achternaam'} 
+    (#{@voornaam ? 'voornaam'})"
+    
+
         
 module.exports = Medewerker

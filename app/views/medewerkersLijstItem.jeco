@@ -1,1 +1,1 @@
-<div class="item"><%= @voornaam %> <%= @achternaam %><br/><div class="smallfont"><%= @postcode %> <%= @geboortedatum %></div></div>
+<div class="item"><%= @personal.givenName %> <%= @personal.familyName %><br/><div class="smallfont"><%= @address.postalcode %> <%= @personal.dateOfBirth %></div></div>

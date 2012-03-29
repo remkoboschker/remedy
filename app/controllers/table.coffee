@@ -1,6 +1,7 @@
-Spine = require('spine')
-
-TableRow = require('controllers/tableRow')
+Spine       = require('spine') 
+Medewerker  = require('models/medewerker')
+TableRow    = require('controllers/tableRow')
+template    = require('views/table')
 
 class Table extends Spine.Controller
   
@@ -13,19 +14,14 @@ class Table extends Spine.Controller
   constructor: ->
     super
     
-  render: (table) ->
-    @html require('views/table')(table.label)
-    for row in table.rows
-      tablerow = new TableRow(type: row.type, name: row.name, label: row.label, id: table.id)
-      tablerow.render()
-      tablerow.bind("nextRow", @nextRow)
-      @tbody.append tablerow.el
-    
-  nextRow: ->
-    if @.el.next().length isnt 0
-      @log "next row"
-    else
-      @log "end of table"
+  render: (name, object) ->
+    @html template(Medewerker.label[name]['label'])
+    for attr, val of object
+      if Medewerker.can[name][attr]["r"]
+        tablerow = new TableRow
+        tablerow.render name, attr, val
+        @tbody.append tablerow.el
+    @log @.el
     
 module.exports = Table
 

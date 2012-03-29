@@ -1,2 +1,2 @@
 <th><%= @label %></th>
-<td><%= @item[@name] %></td>
+<td><%= @val %></td>
