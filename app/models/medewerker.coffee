@@ -25,9 +25,9 @@ class Medewerker extends Spine.Model
     super
   
   fullName: -> 
-    "#{ @initialen ?  'initialen'}
-     #{@achternaam ? 'achternaam'} 
-    (#{@voornaam ? 'voornaam'})"
+    "#{ @personal.initials ?  'initialen'}
+     #{ @personal.familyName ? 'achternaam'} 
+    (#{ @personal.givenName ? 'voornaam'})"
     
 
         

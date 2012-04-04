@@ -19,5 +19,5 @@ class MedewerkersTab extends Spine.Controller
     @append @file, @sidebar
     
     Medewerker.fetch()
-    
+
 module.exports = MedewerkersTab

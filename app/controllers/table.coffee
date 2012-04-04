@@ -14,14 +14,14 @@ class Table extends Spine.Controller
   constructor: ->
     super
     
-  render: (name, object) ->
+  render: (id, name, object) ->
     @html template(Medewerker.label[name]['label'])
+    @el.attr("id", name)
     for attr, val of object
       if Medewerker.can[name][attr]["r"]
         tablerow = new TableRow
-        tablerow.render name, attr, val
+        tablerow.render id, name, attr, val
         @tbody.append tablerow.el
-    @log @.el
     
 module.exports = Table
 

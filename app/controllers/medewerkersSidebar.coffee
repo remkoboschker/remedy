@@ -7,11 +7,10 @@ MedewerkersFile = require('controllers/medewerkersFile')
 List    = require('lib/list')
 $       = Spine.$
 dataObjects = require('lib/dataObjects')
-Acl = require('lib/acl')
 
 class MedewerkersSidebar extends Spine.Controller
 
-  className: 'medewerkersSidebar span3'
+  className: 'medewerkersSidebar sidebar span3'
   
   elements:
     ".items": "items"
@@ -20,6 +19,7 @@ class MedewerkersSidebar extends Spine.Controller
   events:
    "click #createEmployee": "new"
    'keyup input[type=search]': 'filter'
+   'ready': 'resize'
   
   constructor: ->
     super
@@ -38,7 +38,8 @@ class MedewerkersSidebar extends Spine.Controller
 
     Medewerker.bind('refresh change', @render)
     
-    @acl = new Acl "employee"
+    # not the cleanest solution as it goes outside of spine's event handlers. also it is called every time a reload occurs
+    $('document').ready( -> $('.scroll-area').height($('#file').height() - 93)) # set the sidebar to the same height as the file by adjusting the height of the overflow area.
 
   filter: ->
     @query = @search.val()
@@ -58,5 +59,8 @@ class MedewerkersSidebar extends Spine.Controller
       @navigate '/admin/medewerkers', item.id
     else
       alert 'permission denied'
+      
+  resize: ->
+     $('.scroll-area').height($('#file').height() - 93) # set the sidebar to the same height as the file by adjusting the height of the overflow area.
     
 module.exports = MedewerkersSidebar
