@@ -1,0 +1,1230 @@
+info it worked if it ends with ok
+verbose cli [ 'node', '/usr/local/bin/npm', 'install', 'socket.io' ]
+info using npm@1.1.1
+info using node@v0.6.11
+verbose config file /Users/remkoboschker/.npmrc
+verbose config file /usr/local/etc/npmrc
+verbose config file /usr/local/lib/node_modules/npm/npmrc
+verbose caching /Users/remkoboschker/apps/remedy/package.json
+verbose loadDefaults application-name@0.0.1
+verbose caching /Users/remkoboschker/apps/remedy/node_modules/express/package.json
+verbose loadDefaults express@2.5.8
+verbose caching /Users/remkoboschker/apps/remedy/node_modules/jade/package.json
+verbose loadDefaults jade@0.22.0
+verbose caching /Users/remkoboschker/apps/remedy/node_modules/stylus/package.json
+verbose loadDefaults stylus@0.25.0
+verbose from cache /Users/remkoboschker/apps/remedy/package.json
+verbose cache add [ 'socket.io', null ]
+silly cache add: name, spec, args [ undefined, 'socket.io', [ 'socket.io', null ] ]
+verbose parsed url { pathname: 'socket.io', path: 'socket.io', href: 'socket.io' }
+verbose addNamed [ 'socket.io', '' ]
+verbose addNamed [ null, '' ]
+silly name, range, hasData [ 'socket.io', '', false ]
+verbose raw, before any munging socket.io
+verbose url resolving [ 'https://registry.npmjs.org/', './socket.io' ]
+verbose url resolved https://registry.npmjs.org/socket.io
+verbose etag "4PCPRW2BVVH0CGNEW7969YQDR"
+http GET https://registry.npmjs.org/socket.io
+http 304 https://registry.npmjs.org/socket.io
+silly get cb [ 304,
+silly get cb   { server: 'CouchDB/1.2.0 (Erlang OTP/R15B)',
+silly get cb     etag: '"4PCPRW2BVVH0CGNEW7969YQDR"',
+silly get cb     date: 'Fri, 06 Apr 2012 14:56:11 GMT',
+silly get cb     'content-length': '0' } ]
+verbose etag socket.io from cache
+silly name, range, hasData 2 [ 'socket.io', '', true ]
+silly versions [ 'socket.io',
+silly versions   [ '0.3.8',
+silly versions     '0.4.0',
+silly versions     '0.4.1',
+silly versions     '0.5.1',
+silly versions     '0.5.3',
+silly versions     '0.6.0',
+silly versions     '0.6.1',
+silly versions     '0.6.3',
+silly versions     '0.6.4',
+silly versions     '0.6.5',
+silly versions     '0.6.6',
+silly versions     '0.6.7',
+silly versions     '0.6.8',
+silly versions     '0.6.9',
+silly versions     '0.6.10',
+silly versions     '0.6.11',
+silly versions     '0.6.12',
+silly versions     '0.6.14',
+silly versions     '0.6.15',
+silly versions     '0.6.16',
+silly versions     '0.6.17',
+silly versions     '0.6.18',
+silly versions     '0.7.0',
+silly versions     '0.7.1',
+silly versions     '0.7.2',
+silly versions     '0.7.3',
+silly versions     '0.7.4',
+silly versions     '0.7.5',
+silly versions     '0.7.6',
+silly versions     '0.7.7',
+silly versions     '0.7.8',
+silly versions     '0.7.9',
+silly versions     '0.7.10',
+silly versions     '0.7.11',
+silly versions     '0.8.0',
+silly versions     '0.8.1',
+silly versions     '0.8.2',
+silly versions     '0.8.3',
+silly versions     '0.8.4',
+silly versions     '0.8.5',
+silly versions     '0.8.6',
+silly versions     '0.8.7',
+silly versions     '0.9.0',
+silly versions     '0.9.1',
+silly versions     '0.9.1-1',
+silly versions     '0.9.2',
+silly versions     '0.9.3',
+silly versions     '0.9.4',
+silly versions     '0.9.5' ] ]
+verbose bin dist [ '0.6-ares1.7.5-DEV-evundefined-openssl0.9.8r-v83.6.6.20-darwin-ia32-11.3.0',
+verbose bin dist   { shasum: '2ed64d70e5f70abcb8191a76601116c3511e1414',
+verbose bin dist     tarball: 'http://registry.npmjs.org/socket.io/-/socket.io-0.9.5.tgz' } ]
+verbose caching /Users/remkoboschker/.npm/socket.io/0.9.5/package/package.json
+verbose loadDefaults socket.io@0.9.5
+silly resolved [ { name: 'socket.io',
+silly resolved     version: '0.9.5',
+silly resolved     description: 'Real-time apps made cross-browser & easy with a WebSocket-like API',
+silly resolved     homepage: 'http://socket.io',
+silly resolved     keywords: [ 'websocket', 'socket', 'realtime', 'socket.io', 'comet', 'ajax' ],
+silly resolved     author: { name: 'Guillermo Rauch', email: 'guillermo@learnboost.com' },
+silly resolved     contributors: 
+silly resolved      [ { name: 'Guillermo Rauch', email: 'rauchg@gmail.com' },
+silly resolved        { name: 'Arnout Kazemier', email: 'info@3rd-eden.com' },
+silly resolved        { name: 'Vladimir Dronnikov', email: 'dronnikov@gmail.com' },
+silly resolved        { name: 'Einar Otto Stangvik', email: 'einaros@gmail.com' } ],
+silly resolved     repository: 
+silly resolved      { type: 'git',
+silly resolved        url: 'git://github.com/LearnBoost/socket.io.git' },
+silly resolved     dependencies: 
+silly resolved      { 'socket.io-client': '0.9.5',
+silly resolved        policyfile: '0.0.4',
+silly resolved        redis: '0.6.7' },
+silly resolved     devDependencies: 
+silly resolved      { expresso: '0.9.2',
+silly resolved        should: '0.0.4',
+silly resolved        benchmark: '0.2.2',
+silly resolved        microtime: '0.1.3-1',
+silly resolved        colors: '0.5.1' },
+silly resolved     main: 'index',
+silly resolved     engines: { node: '>= 0.4.0' },
+silly resolved     scripts: { test: 'make test' },
+silly resolved     _id: 'socket.io@0.9.5',
+silly resolved     optionalDependencies: {},
+silly resolved     _engineSupported: true,
+silly resolved     _npmVersion: '1.1.1',
+silly resolved     _nodeVersion: 'v0.6.11',
+silly resolved     _defaultsLoaded: true } ]
+info into /Users/remkoboschker/apps/remedy socket.io@0.9.5
+info installOne socket.io@0.9.5
+info unbuild /Users/remkoboschker/apps/remedy/node_modules/socket.io
+verbose from cache /Users/remkoboschker/.npm/socket.io/0.9.5/package/package.json
+verbose mkdir (expected) error ENOENT, no such file or directory '/Users/remkoboschker/apps/remedy/node_modules/___socket.io.npm'
+verbose mkdir done: /Users/remkoboschker/apps/remedy/node_modules/___socket.io.npm 755
+verbose unpack_ uid, gid [ 501, 20 ]
+verbose unpackTarget /Users/remkoboschker/apps/remedy/node_modules/socket.io
+silly gunzTarPerm modes [ '755', '644' ]
+silly afterUntar undefined
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/___socket.io.npm/package
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/___socket.io.npm/package/.npmignore
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/___socket.io.npm/package/.travis.yml
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/___socket.io.npm/package/History.md
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/___socket.io.npm/package/index.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/___socket.io.npm/package/Makefile
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/___socket.io.npm/package/package.json
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/___socket.io.npm/package/Readme.md
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/___socket.io.npm/package/benchmarks
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/___socket.io.npm/package/benchmarks/decode.bench.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/___socket.io.npm/package/benchmarks/encode.bench.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/___socket.io.npm/package/benchmarks/runner.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/___socket.io.npm/package/lib
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/___socket.io.npm/package/lib/client.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/___socket.io.npm/package/lib/logger.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/___socket.io.npm/package/lib/manager.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/___socket.io.npm/package/lib/namespace.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/___socket.io.npm/package/lib/parser.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/___socket.io.npm/package/lib/socket.io.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/___socket.io.npm/package/lib/socket.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/___socket.io.npm/package/lib/static.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/___socket.io.npm/package/lib/store.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/___socket.io.npm/package/lib/transport.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/___socket.io.npm/package/lib/util.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/___socket.io.npm/package/lib/stores
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/___socket.io.npm/package/lib/stores/memory.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/___socket.io.npm/package/lib/stores/redis.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/___socket.io.npm/package/lib/transports
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/___socket.io.npm/package/lib/transports/flashsocket.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/___socket.io.npm/package/lib/transports/http-polling.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/___socket.io.npm/package/lib/transports/htmlfile.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/___socket.io.npm/package/lib/transports/http.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/___socket.io.npm/package/lib/transports/index.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/___socket.io.npm/package/lib/transports/jsonp-polling.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/___socket.io.npm/package/lib/transports/websocket.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/___socket.io.npm/package/lib/transports/xhr-polling.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/___socket.io.npm/package/lib/transports/websocket
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/___socket.io.npm/package/lib/transports/websocket/default.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/___socket.io.npm/package/lib/transports/websocket/hybi-07-12.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/___socket.io.npm/package/lib/transports/websocket/hybi-16.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/___socket.io.npm/package/lib/transports/websocket/index.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/___socket.io.npm/package/support
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/___socket.io.npm/package/support/node-websocket-client
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/___socket.io.npm/package/support/node-websocket-client/LICENSE
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/___socket.io.npm/package/support/node-websocket-client/Makefile
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/___socket.io.npm/package/support/node-websocket-client/package.json
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/___socket.io.npm/package/support/node-websocket-client/README.md
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/___socket.io.npm/package/support/node-websocket-client/examples
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/___socket.io.npm/package/support/node-websocket-client/examples/client-unix.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/___socket.io.npm/package/support/node-websocket-client/examples/client.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/___socket.io.npm/package/support/node-websocket-client/examples/server-unix.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/___socket.io.npm/package/support/node-websocket-client/lib
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/___socket.io.npm/package/support/node-websocket-client/lib/websocket.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/___socket.io.npm/package/support/node-websocket-client/test
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/___socket.io.npm/package/support/node-websocket-client/test/test-basic.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/___socket.io.npm/package/support/node-websocket-client/test/test-client-close.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/___socket.io.npm/package/support/node-websocket-client/test/test-readonly-attrs.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/___socket.io.npm/package/support/node-websocket-client/test/test-ready-state.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/___socket.io.npm/package/support/node-websocket-client/test/test-server-close.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/___socket.io.npm/package/support/node-websocket-client/test/test-unix-send-fd.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/___socket.io.npm/package/support/node-websocket-client/test/test-unix-sockets.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/___socket.io.npm/package/examples
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/___socket.io.npm/package/examples/chat
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/___socket.io.npm/package/examples/chat/app.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/___socket.io.npm/package/examples/chat/index.jade
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/___socket.io.npm/package/examples/chat/package.json
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/___socket.io.npm/package/examples/chat/public
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/___socket.io.npm/package/examples/chat/public/stylesheets
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/___socket.io.npm/package/examples/chat/public/stylesheets/mixins.styl
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/___socket.io.npm/package/examples/chat/public/stylesheets/style.css
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/___socket.io.npm/package/examples/chat/public/stylesheets/style.styl
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/___socket.io.npm/package/examples/irc-output
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/___socket.io.npm/package/examples/irc-output/app.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/___socket.io.npm/package/examples/irc-output/index.jade
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/___socket.io.npm/package/examples/irc-output/irc.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/___socket.io.npm/package/examples/irc-output/package.json
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/___socket.io.npm/package/examples/irc-output/public
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/___socket.io.npm/package/examples/irc-output/public/stylesheets
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/___socket.io.npm/package/examples/irc-output/public/stylesheets/style.styl
+verbose gunzed /Users/remkoboschker/apps/remedy/node_modules/___socket.io.npm/package
+verbose rm'ed /Users/remkoboschker/apps/remedy/node_modules/socket.io
+verbose renamed [ '/Users/remkoboschker/apps/remedy/node_modules/___socket.io.npm/package',
+verbose renamed   '/Users/remkoboschker/apps/remedy/node_modules/socket.io' ]
+verbose caching /Users/remkoboschker/apps/remedy/node_modules/socket.io/package.json
+verbose loadDefaults socket.io@0.9.5
+info preinstall socket.io@0.9.5
+verbose from cache /Users/remkoboschker/apps/remedy/node_modules/socket.io/package.json
+verbose cache add [ 'socket.io-client@0.9.5', null ]
+silly cache add: name, spec, args [ undefined,
+silly cache add: name, spec, args   'socket.io-client@0.9.5',
+silly cache add: name, spec, args   [ 'socket.io-client@0.9.5', null ] ]
+verbose parsed url { pathname: 'socket.io-client@0.9.5',
+verbose parsed url   path: 'socket.io-client@0.9.5',
+verbose parsed url   href: 'socket.io-client@0.9.5' }
+silly cache add: name, spec, args [ 'socket.io-client', '0.9.5', [ 'socket.io-client', '0.9.5' ] ]
+verbose parsed url { pathname: '0.9.5', path: '0.9.5', href: '0.9.5' }
+verbose addNamed [ 'socket.io-client', '0.9.5' ]
+verbose addNamed [ '0.9.5', '0.9.5' ]
+verbose cache add [ 'policyfile@0.0.4', null ]
+silly cache add: name, spec, args [ undefined, 'policyfile@0.0.4', [ 'policyfile@0.0.4', null ] ]
+verbose parsed url { pathname: 'policyfile@0.0.4',
+verbose parsed url   path: 'policyfile@0.0.4',
+verbose parsed url   href: 'policyfile@0.0.4' }
+silly cache add: name, spec, args [ 'policyfile', '0.0.4', [ 'policyfile', '0.0.4' ] ]
+verbose parsed url { pathname: '0.0.4', path: '0.0.4', href: '0.0.4' }
+verbose addNamed [ 'policyfile', '0.0.4' ]
+verbose addNamed [ '0.0.4', '0.0.4' ]
+verbose raw, before any munging socket.io-client/0.9.5
+verbose url resolving [ 'https://registry.npmjs.org/', './socket.io-client/0.9.5' ]
+verbose url resolved https://registry.npmjs.org/socket.io-client/0.9.5
+verbose etag "4M569L2Y2CNCAMCL06J3YLPN6"
+http GET https://registry.npmjs.org/socket.io-client/0.9.5
+verbose cache add [ 'redis@0.6.7', null ]
+silly cache add: name, spec, args [ undefined, 'redis@0.6.7', [ 'redis@0.6.7', null ] ]
+verbose parsed url { pathname: 'redis@0.6.7',
+verbose parsed url   path: 'redis@0.6.7',
+verbose parsed url   href: 'redis@0.6.7' }
+silly cache add: name, spec, args [ 'redis', '0.6.7', [ 'redis', '0.6.7' ] ]
+verbose parsed url { pathname: '0.6.7', path: '0.6.7', href: '0.6.7' }
+verbose addNamed [ 'redis', '0.6.7' ]
+verbose addNamed [ '0.6.7', '0.6.7' ]
+verbose raw, before any munging policyfile/0.0.4
+verbose url resolving [ 'https://registry.npmjs.org/', './policyfile/0.0.4' ]
+verbose url resolved https://registry.npmjs.org/policyfile/0.0.4
+verbose etag "DTZS9VFR8A4ZL94E0AP7G81SZ"
+http GET https://registry.npmjs.org/policyfile/0.0.4
+verbose raw, before any munging redis/0.6.7
+verbose url resolving [ 'https://registry.npmjs.org/', './redis/0.6.7' ]
+verbose url resolved https://registry.npmjs.org/redis/0.6.7
+verbose etag "5M0LEHW3STJC6ONVUWK40V42J"
+http GET https://registry.npmjs.org/redis/0.6.7
+http 304 https://registry.npmjs.org/redis/0.6.7
+silly get cb [ 304,
+silly get cb   { server: 'CouchDB/1.2.0 (Erlang OTP/R15B)',
+silly get cb     etag: '"5M0LEHW3STJC6ONVUWK40V42J"',
+silly get cb     date: 'Fri, 06 Apr 2012 14:56:15 GMT',
+silly get cb     'content-length': '0' } ]
+verbose etag redis/0.6.7 from cache
+verbose bin dist [ '0.6-ares1.7.5-DEV-evundefined-openssl0.9.8r-v83.6.6.20-darwin-ia32-11.3.0',
+verbose bin dist   { shasum: '0f17f913468a5cb2bf0864e4d56669d058668d46',
+verbose bin dist     tarball: 'http://registry.npmjs.org/redis/-/redis-0.6.7.tgz' } ]
+verbose caching /Users/remkoboschker/.npm/redis/0.6.7/package/package.json
+verbose loadDefaults redis@0.6.7
+http 304 https://registry.npmjs.org/socket.io-client/0.9.5
+silly get cb [ 304,
+silly get cb   { server: 'CouchDB/1.2.0 (Erlang OTP/R15B)',
+silly get cb     etag: '"4M569L2Y2CNCAMCL06J3YLPN6"',
+silly get cb     date: 'Fri, 06 Apr 2012 14:56:20 GMT',
+silly get cb     'content-length': '0' } ]
+verbose etag socket.io-client/0.9.5 from cache
+http 304 https://registry.npmjs.org/policyfile/0.0.4
+silly get cb [ 304,
+silly get cb   { server: 'CouchDB/1.2.0 (Erlang OTP/R15B)',
+silly get cb     etag: '"DTZS9VFR8A4ZL94E0AP7G81SZ"',
+silly get cb     date: 'Fri, 06 Apr 2012 14:56:20 GMT',
+silly get cb     'content-length': '0' } ]
+verbose etag policyfile/0.0.4 from cache
+verbose bin dist [ '0.6-ares1.7.5-DEV-evundefined-openssl0.9.8r-v83.6.6.20-darwin-ia32-11.3.0',
+verbose bin dist   { shasum: '8ba9bd3735de006a5b831bca59a2e5cbc30fa53c',
+verbose bin dist     tarball: 'http://registry.npmjs.org/socket.io-client/-/socket.io-client-0.9.5.tgz' } ]
+verbose bin dist [ '0.6-ares1.7.5-DEV-evundefined-openssl0.9.8r-v83.6.6.20-darwin-ia32-11.3.0',
+verbose bin dist   { shasum: 'd6b82ead98ae79ebe228e2daf5903311ec982e4d',
+verbose bin dist     tarball: 'http://registry.npmjs.org/policyfile/-/policyfile-0.0.4.tgz' } ]
+verbose caching /Users/remkoboschker/.npm/socket.io-client/0.9.5/package/package.json
+verbose loadDefaults socket.io-client@0.9.5
+verbose caching /Users/remkoboschker/.npm/policyfile/0.0.4/package/package.json
+verbose loadDefaults policyfile@0.0.4
+silly resolved [ { name: 'redis',
+silly resolved     version: '0.6.7',
+silly resolved     description: 'Redis client library',
+silly resolved     author: { name: 'Matt Ranney', email: 'mjr@ranney.com' },
+silly resolved     contributors: 
+silly resolved      [ { name: 'Rick Olson' },
+silly resolved        { name: 'Tim-Smart' },
+silly resolved        { name: 'TJ Holowaychuk' },
+silly resolved        { name: 'Orion Henry' },
+silly resolved        { name: 'Hank Sims' },
+silly resolved        { name: 'Aivo Paas' },
+silly resolved        { name: 'Paul Carey' },
+silly resolved        { name: 'Pieter Noordhuis' },
+silly resolved        { name: 'Andy Ray' },
+silly resolved        { name: 'Vladimir Dronnikov' },
+silly resolved        { name: 'Dave Hoover' } ],
+silly resolved     main: './index.js',
+silly resolved     scripts: { test: 'node ./test.js' },
+silly resolved     repository: { type: 'git', url: 'git://github.com/mranney/node_redis.git' },
+silly resolved     _id: 'redis@0.6.7',
+silly resolved     dependencies: {},
+silly resolved     devDependencies: {},
+silly resolved     optionalDependencies: {},
+silly resolved     engines: { node: '*' },
+silly resolved     _engineSupported: true,
+silly resolved     _npmVersion: '1.1.1',
+silly resolved     _nodeVersion: 'v0.6.11',
+silly resolved     _defaultsLoaded: true },
+silly resolved   { name: 'socket.io-client',
+silly resolved     description: 'Socket.IO client for the browser and node.js',
+silly resolved     version: '0.9.5',
+silly resolved     main: './lib/io.js',
+silly resolved     browserify: './dist/socket.io.js',
+silly resolved     homepage: 'http://socket.io',
+silly resolved     keywords: [ 'websocket', 'socket', 'realtime', 'socket.io', 'comet', 'ajax' ],
+silly resolved     author: { name: 'Guillermo Rauch', email: 'guillermo@learnboost.com' },
+silly resolved     contributors: 
+silly resolved      [ { name: 'Guillermo Rauch', email: 'rauchg@gmail.com' },
+silly resolved        { name: 'Arnout Kazemier', email: 'info@3rd-eden.com' },
+silly resolved        { name: 'Vladimir Dronnikov', email: 'dronnikov@gmail.com' },
+silly resolved        { name: 'Einar Otto Stangvik', email: 'einaros@gmail.com' } ],
+silly resolved     repository: 
+silly resolved      { type: 'git',
+silly resolved        url: 'git://github.com/LearnBoost/socket.io-client.git' },
+silly resolved     dependencies: 
+silly resolved      { 'uglify-js': '1.2.5',
+silly resolved        ws: '0.4.x',
+silly resolved        xmlhttprequest: '1.2.2',
+silly resolved        'active-x-obfuscator': '0.0.1' },
+silly resolved     devDependencies: 
+silly resolved      { expresso: '*',
+silly resolved        express: '2.5.x',
+silly resolved        jade: '*',
+silly resolved        stylus: '*',
+silly resolved        'socket.io': '0.9.5',
+silly resolved        'socket.io-client': '0.9.5' },
+silly resolved     engines: { node: '>= 0.4.0' },
+silly resolved     _id: 'socket.io-client@0.9.5',
+silly resolved     optionalDependencies: {},
+silly resolved     _engineSupported: true,
+silly resolved     _npmVersion: '1.1.1',
+silly resolved     _nodeVersion: 'v0.6.11',
+silly resolved     _defaultsLoaded: true,
+silly resolved     scripts: {} },
+silly resolved   { name: 'policyfile',
+silly resolved     version: '0.0.4',
+silly resolved     author: { name: 'Arnout Kazemier' },
+silly resolved     description: 'Flash Socket Policy File Server. A server to respond to Flash Socket Policy requests, both inline and through a dedicated server instance.',
+silly resolved     main: 'index',
+silly resolved     keywords: 
+silly resolved      [ 'flash',
+silly resolved        'socket',
+silly resolved        'policy',
+silly resolved        'file',
+silly resolved        'server',
+silly resolved        'Flash Socket Policy File Server',
+silly resolved        'cross domain' ],
+silly resolved     directories: { lib: './lib' },
+silly resolved     maintainers: 
+silly resolved      [ { name: 'Arnout Kazemier',
+silly resolved          email: 'info@3rd-Eden.com',
+silly resolved          url: 'http://blog.3rd-Eden.com' } ],
+silly resolved     licenses: 
+silly resolved      [ { type: 'MIT',
+silly resolved          url: 'https://github.com/3rd-Eden/FlashPolicyFileServer/blob/master/LICENSE' } ],
+silly resolved     repositories: 
+silly resolved      [ { type: 'git',
+silly resolved          url: 'https://github.com/3rd-Eden/FlashPolicyFileServer.git' } ],
+silly resolved     _id: 'policyfile@0.0.4',
+silly resolved     dependencies: {},
+silly resolved     devDependencies: {},
+silly resolved     optionalDependencies: {},
+silly resolved     engines: { node: '*' },
+silly resolved     _engineSupported: true,
+silly resolved     _npmVersion: '1.1.1',
+silly resolved     _nodeVersion: 'v0.6.11',
+silly resolved     _defaultsLoaded: true,
+silly resolved     scripts: {} } ]
+info into /Users/remkoboschker/apps/remedy/node_modules/socket.io redis@0.6.7
+info into /Users/remkoboschker/apps/remedy/node_modules/socket.io socket.io-client@0.9.5
+info into /Users/remkoboschker/apps/remedy/node_modules/socket.io policyfile@0.0.4
+info installOne redis@0.6.7
+info installOne socket.io-client@0.9.5
+info installOne policyfile@0.0.4
+info unbuild /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/redis
+info unbuild /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client
+info unbuild /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/policyfile
+verbose from cache /Users/remkoboschker/.npm/redis/0.6.7/package/package.json
+verbose from cache /Users/remkoboschker/.npm/socket.io-client/0.9.5/package/package.json
+verbose from cache /Users/remkoboschker/.npm/policyfile/0.0.4/package/package.json
+verbose mkdir (expected) error ENOENT, no such file or directory '/Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules'
+verbose mkdir (expected) error ENOENT, no such file or directory '/Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules'
+verbose mkdir (expected) error ENOENT, no such file or directory '/Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules'
+verbose mkdir (expected) error ENOENT, no such file or directory '/Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___redis.npm'
+verbose mkdir (expected) error ENOENT, no such file or directory '/Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm'
+verbose mkdir (expected) error ENOENT, no such file or directory '/Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___policyfile.npm'
+verbose mkdir done: /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___redis.npm 755
+verbose mkdir done: /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm 755
+verbose mkdir done: /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___policyfile.npm 755
+verbose unpack_ uid, gid [ 501, 20 ]
+verbose unpackTarget /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/redis
+silly gunzTarPerm modes [ '755', '644' ]
+verbose unpack_ uid, gid [ 501, 20 ]
+verbose unpackTarget /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client
+silly gunzTarPerm modes [ '755', '644' ]
+verbose unpack_ uid, gid [ 501, 20 ]
+verbose unpackTarget /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/policyfile
+silly gunzTarPerm modes [ '755', '644' ]
+silly afterUntar undefined
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___policyfile.npm/package
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___policyfile.npm/package/.npmignore
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___policyfile.npm/package/index.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___policyfile.npm/package/LICENSE
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___policyfile.npm/package/Makefile
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___policyfile.npm/package/package.json
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___policyfile.npm/package/README.md
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___policyfile.npm/package/doc
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___policyfile.npm/package/doc/index.html
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___policyfile.npm/package/examples
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___policyfile.npm/package/examples/basic.fallback.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___policyfile.npm/package/examples/basic.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___policyfile.npm/package/lib
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___policyfile.npm/package/lib/server.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___policyfile.npm/package/tests
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___policyfile.npm/package/tests/unit.test.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___policyfile.npm/package/tests/ssl
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___policyfile.npm/package/tests/ssl/ssl.crt
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___policyfile.npm/package/tests/ssl/ssl.private.key
+verbose gunzed /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___policyfile.npm/package
+verbose rm'ed /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/policyfile
+verbose renamed [ '/Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___policyfile.npm/package',
+verbose renamed   '/Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/policyfile' ]
+verbose caching /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/policyfile/package.json
+verbose loadDefaults policyfile@0.0.4
+info preinstall policyfile@0.0.4
+verbose from cache /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/policyfile/package.json
+silly resolved []
+verbose about to build /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/policyfile
+info build /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/policyfile
+verbose from cache /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/policyfile/package.json
+verbose linkStuff [ false,
+verbose linkStuff   false,
+verbose linkStuff   false,
+verbose linkStuff   '/Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules' ]
+info linkStuff policyfile@0.0.4
+verbose linkBins policyfile@0.0.4
+verbose linkMans policyfile@0.0.4
+verbose rebuildBundles policyfile@0.0.4
+info install policyfile@0.0.4
+info postinstall policyfile@0.0.4
+verbose installOne cb policyfile@0.0.4
+silly afterUntar undefined
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___redis.npm/package
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___redis.npm/package/changelog.md
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___redis.npm/package/eval_test.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___redis.npm/package/generate_commands.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___redis.npm/package/index.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___redis.npm/package/multi_bench.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___redis.npm/package/package.json
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___redis.npm/package/README.md
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___redis.npm/package/simple_test.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___redis.npm/package/test.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___redis.npm/package/examples
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___redis.npm/package/examples/auth.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___redis.npm/package/examples/backpressure_drain.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___redis.npm/package/examples/extend.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___redis.npm/package/examples/file.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___redis.npm/package/examples/mget.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___redis.npm/package/examples/monitor.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___redis.npm/package/examples/multi.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___redis.npm/package/examples/multi2.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___redis.npm/package/examples/psubscribe.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___redis.npm/package/examples/pub_sub.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___redis.npm/package/examples/simple.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___redis.npm/package/examples/subqueries.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___redis.npm/package/examples/subquery.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___redis.npm/package/examples/unix_socket.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___redis.npm/package/examples/web_server.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___redis.npm/package/lib
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___redis.npm/package/lib/commands.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___redis.npm/package/lib/queue.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___redis.npm/package/lib/to_array.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___redis.npm/package/lib/util.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___redis.npm/package/lib/parser
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___redis.npm/package/lib/parser/hiredis.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___redis.npm/package/lib/parser/javascript.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___redis.npm/package/tests
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___redis.npm/package/tests/buffer_bench.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___redis.npm/package/tests/reconnect_test.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___redis.npm/package/tests/sub_quit_test.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___redis.npm/package/tests/test_start_stop.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___redis.npm/package/tests/stress
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___redis.npm/package/tests/stress/codec.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___redis.npm/package/tests/stress/pubsub
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___redis.npm/package/tests/stress/pubsub/pub.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___redis.npm/package/tests/stress/pubsub/run
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___redis.npm/package/tests/stress/pubsub/server.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___redis.npm/package/tests/stress/rpushblpop
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___redis.npm/package/tests/stress/rpushblpop/pub.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___redis.npm/package/tests/stress/rpushblpop/run
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___redis.npm/package/tests/stress/rpushblpop/server.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___redis.npm/package/tests/stress/speed
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___redis.npm/package/tests/stress/speed/00
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___redis.npm/package/tests/stress/speed/plot
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___redis.npm/package/tests/stress/speed/size-rate.png
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___redis.npm/package/tests/stress/speed/speed.js
+verbose gunzed /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___redis.npm/package
+verbose rm'ed /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/redis
+verbose renamed [ '/Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___redis.npm/package',
+verbose renamed   '/Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/redis' ]
+verbose caching /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/redis/package.json
+verbose loadDefaults redis@0.6.7
+info preinstall redis@0.6.7
+verbose from cache /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/redis/package.json
+silly resolved []
+verbose about to build /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/redis
+info build /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/redis
+verbose from cache /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/redis/package.json
+verbose linkStuff [ false,
+verbose linkStuff   false,
+verbose linkStuff   false,
+verbose linkStuff   '/Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules' ]
+info linkStuff redis@0.6.7
+verbose linkBins redis@0.6.7
+verbose linkMans redis@0.6.7
+verbose rebuildBundles redis@0.6.7
+info install redis@0.6.7
+info postinstall redis@0.6.7
+verbose installOne cb redis@0.6.7
+silly afterUntar undefined
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/.npmignore
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/History.md
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/Makefile
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/package.json
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/README.md
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/bin
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/bin/builder.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/dist
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/dist/socket.io.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/dist/socket.io.min.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/dist/WebSocketMain.swf
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/dist/WebSocketMainInsecure.swf
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/test
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/test/events.test.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/test/io.test.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/test/parser.test.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/test/socket.test.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/test/util.test.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/test/worker.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/test/node
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/test/node/builder.common.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/test/node/builder.test.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/events.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/io.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/json.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/namespace.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/parser.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/socket.io-client.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/socket.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/transport.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/util.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/transports
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/transports/flashsocket.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/transports/htmlfile.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/transports/jsonp-polling.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/transports/websocket.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/transports/xhr-polling.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/transports/xhr.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/.npmignore
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/README.md
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/sample.html
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/swfobject.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/web_socket.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/WebSocketMain.swf
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/WebSocketMainInsecure.zip
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/build.sh
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/IWebSocketLogger.as
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/WebSocket.as
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/WebSocketEvent.as
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/WebSocketMain.as
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/WebSocketMainInsecure.as
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/gsolo
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/gsolo/encryption
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/gsolo/encryption/MD5.as
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/adobe
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/adobe/net
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/adobe/net/proxies
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/adobe/net/proxies/RFC2817Socket.as
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/math
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/math/BarrettReduction.as
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/math/bi_internal.as
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/math/BigInteger.as
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/math/ClassicReduction.as
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/math/IReduction.as
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/math/MontgomeryReduction.as
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/math/NullReduction.as
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/Crypto.as
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/cert
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/cert/MozillaRootCertificates.as
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/cert/X509Certificate.as
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/cert/X509CertificateCollection.as
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/HMAC.as
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/IHash.as
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/IHMAC.as
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/MAC.as
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/MD2.as
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/MD5.as
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/SHA1.as
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/SHA224.as
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/SHA256.as
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/SHABase.as
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/prng
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/prng/ARC4.as
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/prng/IPRNG.as
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/prng/Random.as
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/prng/TLSPRF.as
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/rsa
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/rsa/RSAKey.as
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/AESKey.as
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/aeskey.pl
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/BlowFishKey.as
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/CBCMode.as
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/CFB8Mode.as
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/CFBMode.as
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/CTRMode.as
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/DESKey.as
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/dump.txt
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/ECBMode.as
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/ICipher.as
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/IMode.as
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/IPad.as
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/IStreamCipher.as
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/ISymmetricKey.as
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/IVMode.as
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/NullPad.as
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/OFBMode.as
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/PKCS5.as
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/SimpleIVMode.as
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/SSLPad.as
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/TLSPad.as
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/TripleDESKey.as
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/XTeaKey.as
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/AESKeyTest.as
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/ARC4Test.as
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/BigIntegerTest.as
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/BlowFishKeyTest.as
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/CBCModeTest.as
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/CFB8ModeTest.as
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/CFBModeTest.as
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/CTRModeTest.as
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/DESKeyTest.as
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/ECBModeTest.as
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/HMACTest.as
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/ITestHarness.as
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/MD2Test.as
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/MD5Test.as
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/OFBModeTest.as
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/RSAKeyTest.as
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/SHA1Test.as
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/SHA224Test.as
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/SHA256Test.as
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/TestCase.as
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/TLSPRFTest.as
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/TripleDESKeyTest.as
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/XTeaKeyTest.as
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/BulkCiphers.as
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/CipherSuites.as
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/ISecurityParameters.as
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/IConnectionState.as
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/KeyExchanges.as
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/MACs.as
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/SSLConnectionState.as
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/SSLEvent.as
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/SSLSecurityParameters.as
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/TLSConfig.as
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/TLSConnectionState.as
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/TLSEngine.as
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/TLSError.as
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/TLSEvent.as
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/TLSSecurityParameters.as
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/TLSSocket.as
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/TLSSocketEvent.as
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/TLSTest.as
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/util
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/util/ArrayUtil.as
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/util/Base64.as
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/util/Hex.as
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/util/Memory.as
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/ByteString.as
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/DER.as
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/IAsn1Type.as
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/Integer.as
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/ObjectIdentifier.as
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/OID.as
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/PEM.as
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/PrintableString.as
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/Sequence.as
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/Set.as
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/Type.as
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/UTCTime.as
+verbose gunzed /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package
+verbose rm'ed /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client
+verbose renamed [ '/Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/___socket.io-client.npm/package',
+verbose renamed   '/Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client' ]
+verbose caching /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/package.json
+verbose loadDefaults socket.io-client@0.9.5
+info preinstall socket.io-client@0.9.5
+verbose from cache /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/package.json
+verbose cache add [ 'uglify-js@1.2.5', null ]
+silly cache add: name, spec, args [ undefined, 'uglify-js@1.2.5', [ 'uglify-js@1.2.5', null ] ]
+verbose parsed url { pathname: 'uglify-js@1.2.5',
+verbose parsed url   path: 'uglify-js@1.2.5',
+verbose parsed url   href: 'uglify-js@1.2.5' }
+silly cache add: name, spec, args [ 'uglify-js', '1.2.5', [ 'uglify-js', '1.2.5' ] ]
+verbose parsed url { pathname: '1.2.5', path: '1.2.5', href: '1.2.5' }
+verbose addNamed [ 'uglify-js', '1.2.5' ]
+verbose addNamed [ '1.2.5', '1.2.5' ]
+verbose cache add [ 'ws@0.4.x', null ]
+silly cache add: name, spec, args [ undefined, 'ws@0.4.x', [ 'ws@0.4.x', null ] ]
+verbose parsed url { pathname: 'ws@0.4.x', path: 'ws@0.4.x', href: 'ws@0.4.x' }
+silly cache add: name, spec, args [ 'ws', '0.4.x', [ 'ws', '0.4.x' ] ]
+verbose parsed url { pathname: '0.4.x', path: '0.4.x', href: '0.4.x' }
+verbose addNamed [ 'ws', '0.4.x' ]
+verbose addNamed [ null, '>=0.4.0- <0.5.0-' ]
+silly name, range, hasData [ 'ws', '>=0.4.0- <0.5.0-', false ]
+verbose cache add [ 'xmlhttprequest@1.2.2', null ]
+silly cache add: name, spec, args [ undefined,
+silly cache add: name, spec, args   'xmlhttprequest@1.2.2',
+silly cache add: name, spec, args   [ 'xmlhttprequest@1.2.2', null ] ]
+verbose parsed url { pathname: 'xmlhttprequest@1.2.2',
+verbose parsed url   path: 'xmlhttprequest@1.2.2',
+verbose parsed url   href: 'xmlhttprequest@1.2.2' }
+silly cache add: name, spec, args [ 'xmlhttprequest', '1.2.2', [ 'xmlhttprequest', '1.2.2' ] ]
+verbose parsed url { pathname: '1.2.2', path: '1.2.2', href: '1.2.2' }
+verbose addNamed [ 'xmlhttprequest', '1.2.2' ]
+verbose addNamed [ '1.2.2', '1.2.2' ]
+verbose raw, before any munging uglify-js/1.2.5
+verbose url resolving [ 'https://registry.npmjs.org/', './uglify-js/1.2.5' ]
+verbose url resolved https://registry.npmjs.org/uglify-js/1.2.5
+verbose etag "BEING7K51L4L23XXKHAQ5RWV2"
+http GET https://registry.npmjs.org/uglify-js/1.2.5
+verbose cache add [ 'active-x-obfuscator@0.0.1', null ]
+silly cache add: name, spec, args [ undefined,
+silly cache add: name, spec, args   'active-x-obfuscator@0.0.1',
+silly cache add: name, spec, args   [ 'active-x-obfuscator@0.0.1', null ] ]
+verbose parsed url { pathname: 'active-x-obfuscator@0.0.1',
+verbose parsed url   path: 'active-x-obfuscator@0.0.1',
+verbose parsed url   href: 'active-x-obfuscator@0.0.1' }
+silly cache add: name, spec, args [ 'active-x-obfuscator',
+silly cache add: name, spec, args   '0.0.1',
+silly cache add: name, spec, args   [ 'active-x-obfuscator', '0.0.1' ] ]
+verbose parsed url { pathname: '0.0.1', path: '0.0.1', href: '0.0.1' }
+verbose addNamed [ 'active-x-obfuscator', '0.0.1' ]
+verbose addNamed [ '0.0.1', '0.0.1' ]
+verbose raw, before any munging ws
+verbose url resolving [ 'https://registry.npmjs.org/', './ws' ]
+verbose url resolved https://registry.npmjs.org/ws
+verbose etag "6C9N6CGF70Z3CC853LGPY9REB"
+http GET https://registry.npmjs.org/ws
+verbose raw, before any munging xmlhttprequest/1.2.2
+verbose url resolving [ 'https://registry.npmjs.org/', './xmlhttprequest/1.2.2' ]
+verbose url resolved https://registry.npmjs.org/xmlhttprequest/1.2.2
+verbose etag "A9SWPNYTPC5EG9TIXN264C85T"
+http GET https://registry.npmjs.org/xmlhttprequest/1.2.2
+verbose raw, before any munging active-x-obfuscator/0.0.1
+verbose url resolving [ 'https://registry.npmjs.org/', './active-x-obfuscator/0.0.1' ]
+verbose url resolved https://registry.npmjs.org/active-x-obfuscator/0.0.1
+verbose etag "ARXCUFIL4P5JIFXLKVMRJJINX"
+http GET https://registry.npmjs.org/active-x-obfuscator/0.0.1
+http 304 https://registry.npmjs.org/active-x-obfuscator/0.0.1
+silly get cb [ 304,
+silly get cb   { server: 'CouchDB/1.2.0 (Erlang OTP/R15B)',
+silly get cb     etag: '"ARXCUFIL4P5JIFXLKVMRJJINX"',
+silly get cb     date: 'Fri, 06 Apr 2012 14:56:27 GMT',
+silly get cb     'content-length': '0' } ]
+verbose etag active-x-obfuscator/0.0.1 from cache
+verbose bin dist [ '0.6-ares1.7.5-DEV-evundefined-openssl0.9.8r-v83.6.6.20-darwin-ia32-11.3.0',
+verbose bin dist   { shasum: '089b89b37145ff1d9ec74af6530be5526cae1f1a',
+verbose bin dist     tarball: 'http://registry.npmjs.org/active-x-obfuscator/-/active-x-obfuscator-0.0.1.tgz' } ]
+verbose caching /Users/remkoboschker/.npm/active-x-obfuscator/0.0.1/package/package.json
+verbose loadDefaults active-x-obfuscator@0.0.1
+http 304 https://registry.npmjs.org/ws
+silly get cb [ 304,
+silly get cb   { server: 'CouchDB/1.2.0 (Erlang OTP/R15B)',
+silly get cb     etag: '"6C9N6CGF70Z3CC853LGPY9REB"',
+silly get cb     date: 'Fri, 06 Apr 2012 14:56:28 GMT',
+silly get cb     'content-length': '0' } ]
+verbose etag ws from cache
+silly name, range, hasData 2 [ 'ws', '>=0.4.0- <0.5.0-', true ]
+silly versions [ 'ws',
+silly versions   [ '0.2.6',
+silly versions     '0.2.8',
+silly versions     '0.2.9',
+silly versions     '0.3.0',
+silly versions     '0.3.1',
+silly versions     '0.3.2',
+silly versions     '0.3.3',
+silly versions     '0.3.4',
+silly versions     '0.3.4-2',
+silly versions     '0.3.5',
+silly versions     '0.3.5-2',
+silly versions     '0.3.5-3',
+silly versions     '0.3.5-4',
+silly versions     '0.3.6',
+silly versions     '0.3.7',
+silly versions     '0.3.8',
+silly versions     '0.3.9',
+silly versions     '0.4.0',
+silly versions     '0.4.1',
+silly versions     '0.4.2',
+silly versions     '0.4.3',
+silly versions     '0.4.5',
+silly versions     '0.4.6',
+silly versions     '0.4.7',
+silly versions     '0.4.8',
+silly versions     '0.4.9',
+silly versions     '0.4.10',
+silly versions     '0.4.11',
+silly versions     '0.4.12' ] ]
+verbose bin dist [ '0.6-ares1.7.5-DEV-evundefined-openssl0.9.8r-v83.6.6.20-darwin-ia32-11.3.0',
+verbose bin dist   { shasum: '2aefe4e7e8a135cce0b04e31a4f57bdda7a3b4e3',
+verbose bin dist     tarball: 'http://registry.npmjs.org/ws/-/ws-0.4.12.tgz' } ]
+verbose has wscript [ undefined,
+verbose has wscript   { file: '/Users/remkoboschker/.npm/ws/0.4.12/package/package.json',
+verbose has wscript     contributors: false,
+verbose has wscript     serverjs: false,
+verbose has wscript     wscript: true } ]
+verbose caching /Users/remkoboschker/.npm/ws/0.4.12/package/package.json
+verbose loadDefaults ws@0.4.12
+http 304 https://registry.npmjs.org/xmlhttprequest/1.2.2
+silly get cb [ 304,
+silly get cb   { server: 'CouchDB/1.2.0 (Erlang OTP/R15B)',
+silly get cb     etag: '"A9SWPNYTPC5EG9TIXN264C85T"',
+silly get cb     date: 'Fri, 06 Apr 2012 14:56:28 GMT',
+silly get cb     'content-length': '0' } ]
+verbose etag xmlhttprequest/1.2.2 from cache
+verbose bin dist [ '0.6-ares1.7.5-DEV-evundefined-openssl0.9.8r-v83.6.6.20-darwin-ia32-11.3.0',
+verbose bin dist   { shasum: 'e8875bdb13af7c22b04cbb034caadf8ff22676a3',
+verbose bin dist     tarball: 'http://registry.npmjs.org/xmlhttprequest/-/xmlhttprequest-1.2.2.tgz' } ]
+verbose caching /Users/remkoboschker/.npm/xmlhttprequest/1.2.2/package/package.json
+verbose loadDefaults xmlhttprequest@1.2.2
+http 304 https://registry.npmjs.org/uglify-js/1.2.5
+silly get cb [ 304,
+silly get cb   { server: 'CouchDB/1.2.0 (Erlang OTP/R15B)',
+silly get cb     etag: '"BEING7K51L4L23XXKHAQ5RWV2"',
+silly get cb     date: 'Fri, 06 Apr 2012 14:56:26 GMT',
+silly get cb     'content-length': '0' } ]
+verbose etag uglify-js/1.2.5 from cache
+verbose bin dist [ '0.6-ares1.7.5-DEV-evundefined-openssl0.9.8r-v83.6.6.20-darwin-ia32-11.3.0',
+verbose bin dist   { shasum: 'b542c2c76f78efb34b200b20177634330ff702b6',
+verbose bin dist     tarball: 'http://registry.npmjs.org/uglify-js/-/uglify-js-1.2.5.tgz' } ]
+verbose caching /Users/remkoboschker/.npm/uglify-js/1.2.5/package/package.json
+verbose loadDefaults uglify-js@1.2.5
+silly resolved [ { author: 
+silly resolved      { name: 'Felix Geisendörfer',
+silly resolved        email: 'felix@debuggable.com',
+silly resolved        url: 'http://debuggable.com/' },
+silly resolved     name: 'active-x-obfuscator',
+silly resolved     description: 'A module to (safely) obfuscate all occurrences of the string \'ActiveX\' inside any JavaScript code.',
+silly resolved     version: '0.0.1',
+silly resolved     homepage: 'https://github.com/felixge/node-active-x-obfuscator',
+silly resolved     repository: 
+silly resolved      { type: 'git',
+silly resolved        url: 'git://github.com/felixge/node-active-x-obfuscator.git' },
+silly resolved     main: './index',
+silly resolved     scripts: { test: 'node test.js' },
+silly resolved     engines: { node: '*' },
+silly resolved     dependencies: { zeparser: '0.0.5' },
+silly resolved     devDependencies: {},
+silly resolved     optionalDependencies: {},
+silly resolved     _id: 'active-x-obfuscator@0.0.1',
+silly resolved     _engineSupported: true,
+silly resolved     _npmVersion: '1.1.1',
+silly resolved     _nodeVersion: 'v0.6.11',
+silly resolved     _defaultsLoaded: true },
+silly resolved   { author: 
+silly resolved      { name: 'Einar Otto Stangvik',
+silly resolved        email: 'einaros@gmail.com',
+silly resolved        url: 'http://2x.io' },
+silly resolved     name: 'ws',
+silly resolved     description: 'simple to use, blazing fast and thoroughly tested websocket client, server and console for node.js, up-to-date against RFC-6455',
+silly resolved     version: '0.4.12',
+silly resolved     repository: { type: 'git', url: 'git://github.com/einaros/ws.git' },
+silly resolved     bin: { wscat: './bin/wscat' },
+silly resolved     scripts: { test: 'make test', preinstall: 'make' },
+silly resolved     engines: { node: '>=0.4.0' },
+silly resolved     dependencies: { commander: '0.5.x', options: 'latest' },
+silly resolved     devDependencies: 
+silly resolved      { mocha: '0.8.x',
+silly resolved        should: '0.4.2',
+silly resolved        'expect.js': '0.1.2',
+silly resolved        benchmark: '0.3.x',
+silly resolved        tinycolor: '0.x',
+silly resolved        ansi: 'latest' },
+silly resolved     _id: 'ws@0.4.12',
+silly resolved     optionalDependencies: {},
+silly resolved     _engineSupported: true,
+silly resolved     _npmVersion: '1.1.1',
+silly resolved     _nodeVersion: 'v0.6.11',
+silly resolved     _defaultsLoaded: true },
+silly resolved   { name: 'xmlhttprequest',
+silly resolved     description: 'XMLHttpRequest for Node',
+silly resolved     version: '1.2.2',
+silly resolved     author: { name: 'Dan DeFelippi' },
+silly resolved     licenses: [ { type: 'MIT', url: 'http://creativecommons.org/licenses/MIT/' } ],
+silly resolved     repository: 
+silly resolved      { type: 'git',
+silly resolved        url: 'git://github.com/driverdan/node-XMLHttpRequest.git' },
+silly resolved     engine: [ 'node >=0.4.0' ],
+silly resolved     main: './XMLHttpRequest.js',
+silly resolved     _id: 'xmlhttprequest@1.2.2',
+silly resolved     dependencies: {},
+silly resolved     devDependencies: {},
+silly resolved     optionalDependencies: {},
+silly resolved     engines: { node: '*' },
+silly resolved     _engineSupported: true,
+silly resolved     _npmVersion: '1.1.1',
+silly resolved     _nodeVersion: 'v0.6.11',
+silly resolved     _defaultsLoaded: true,
+silly resolved     scripts: {} },
+silly resolved   { name: 'uglify-js',
+silly resolved     description: 'JavaScript parser and compressor/beautifier toolkit',
+silly resolved     author: 
+silly resolved      { name: 'Mihai Bazon',
+silly resolved        email: 'mihai.bazon@gmail.com',
+silly resolved        url: 'http://mihai.bazon.net/blog' },
+silly resolved     version: '1.2.5',
+silly resolved     main: './uglify-js.js',
+silly resolved     bin: { uglifyjs: './bin/uglifyjs' },
+silly resolved     repository: { type: 'git', url: 'git@github.com:mishoo/UglifyJS.git' },
+silly resolved     _id: 'uglify-js@1.2.5',
+silly resolved     dependencies: {},
+silly resolved     devDependencies: {},
+silly resolved     optionalDependencies: {},
+silly resolved     engines: { node: '*' },
+silly resolved     _engineSupported: true,
+silly resolved     _npmVersion: '1.1.1',
+silly resolved     _nodeVersion: 'v0.6.11',
+silly resolved     _defaultsLoaded: true } ]
+info into /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client active-x-obfuscator@0.0.1
+info into /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client ws@0.4.12
+info into /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client xmlhttprequest@1.2.2
+info into /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client uglify-js@1.2.5
+info installOne active-x-obfuscator@0.0.1
+info installOne ws@0.4.12
+info installOne xmlhttprequest@1.2.2
+info installOne uglify-js@1.2.5
+info unbuild /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/active-x-obfuscator
+info unbuild /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws
+info unbuild /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/xmlhttprequest
+info unbuild /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js
+verbose from cache /Users/remkoboschker/.npm/active-x-obfuscator/0.0.1/package/package.json
+verbose from cache /Users/remkoboschker/.npm/ws/0.4.12/package/package.json
+verbose from cache /Users/remkoboschker/.npm/xmlhttprequest/1.2.2/package/package.json
+verbose from cache /Users/remkoboschker/.npm/uglify-js/1.2.5/package/package.json
+verbose mkdir (expected) error ENOENT, no such file or directory '/Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules'
+verbose mkdir (expected) error ENOENT, no such file or directory '/Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules'
+verbose mkdir (expected) error ENOENT, no such file or directory '/Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules'
+verbose mkdir (expected) error ENOENT, no such file or directory '/Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules'
+verbose mkdir (expected) error ENOENT, no such file or directory '/Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/___active-x-obfuscator.npm'
+verbose mkdir (expected) error ENOENT, no such file or directory '/Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/___xmlhttprequest.npm'
+verbose mkdir (expected) error ENOENT, no such file or directory '/Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm'
+verbose mkdir (expected) error ENOENT, no such file or directory '/Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm'
+verbose mkdir done: /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/___active-x-obfuscator.npm 755
+verbose mkdir done: /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/___xmlhttprequest.npm 755
+verbose mkdir done: /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm 755
+verbose mkdir done: /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm 755
+verbose unpack_ uid, gid [ 501, 20 ]
+verbose unpackTarget /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/active-x-obfuscator
+silly gunzTarPerm modes [ '755', '644' ]
+verbose unpack_ uid, gid [ 501, 20 ]
+verbose unpackTarget /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/xmlhttprequest
+silly gunzTarPerm modes [ '755', '644' ]
+verbose unpack_ uid, gid [ 501, 20 ]
+verbose unpackTarget /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws
+silly gunzTarPerm modes [ '755', '644' ]
+verbose unpack_ uid, gid [ 501, 20 ]
+verbose unpackTarget /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js
+silly gunzTarPerm modes [ '755', '644' ]
+silly afterUntar undefined
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/___xmlhttprequest.npm/package
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/___xmlhttprequest.npm/package/autotest.watchr
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/___xmlhttprequest.npm/package/demo.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/___xmlhttprequest.npm/package/package.json
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/___xmlhttprequest.npm/package/README.md
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/___xmlhttprequest.npm/package/XMLHttpRequest.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/___xmlhttprequest.npm/package/tests
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/___xmlhttprequest.npm/package/tests/test-constants.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/___xmlhttprequest.npm/package/tests/test-headers.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/___xmlhttprequest.npm/package/tests/test-request.js
+verbose gunzed /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/___xmlhttprequest.npm/package
+verbose rm'ed /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/xmlhttprequest
+verbose renamed [ '/Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/___xmlhttprequest.npm/package',
+verbose renamed   '/Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/xmlhttprequest' ]
+verbose caching /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/xmlhttprequest/package.json
+verbose loadDefaults xmlhttprequest@1.2.2
+info preinstall xmlhttprequest@1.2.2
+verbose from cache /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/xmlhttprequest/package.json
+silly resolved []
+verbose about to build /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/xmlhttprequest
+info build /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/xmlhttprequest
+verbose from cache /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/xmlhttprequest/package.json
+verbose linkStuff [ false,
+verbose linkStuff   false,
+verbose linkStuff   false,
+verbose linkStuff   '/Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules' ]
+info linkStuff xmlhttprequest@1.2.2
+verbose linkBins xmlhttprequest@1.2.2
+verbose linkMans xmlhttprequest@1.2.2
+verbose rebuildBundles xmlhttprequest@1.2.2
+info install xmlhttprequest@1.2.2
+info postinstall xmlhttprequest@1.2.2
+verbose installOne cb xmlhttprequest@1.2.2
+silly afterUntar undefined
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/___active-x-obfuscator.npm/package
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/___active-x-obfuscator.npm/package/..gitignore.un~
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/___active-x-obfuscator.npm/package/.index.js.un~
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/___active-x-obfuscator.npm/package/.npmignore
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/___active-x-obfuscator.npm/package/.package.json.un~
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/___active-x-obfuscator.npm/package/.Readme.md.un~
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/___active-x-obfuscator.npm/package/.test.js.un~
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/___active-x-obfuscator.npm/package/index.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/___active-x-obfuscator.npm/package/Readme.md
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/___active-x-obfuscator.npm/package/package.json
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/___active-x-obfuscator.npm/package/test.js
+verbose gunzed /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/___active-x-obfuscator.npm/package
+verbose rm'ed /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/active-x-obfuscator
+verbose renamed [ '/Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/___active-x-obfuscator.npm/package',
+verbose renamed   '/Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/active-x-obfuscator' ]
+verbose caching /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/active-x-obfuscator/package.json
+verbose loadDefaults active-x-obfuscator@0.0.1
+info preinstall active-x-obfuscator@0.0.1
+verbose from cache /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/active-x-obfuscator/package.json
+verbose cache add [ 'zeparser@0.0.5', null ]
+silly cache add: name, spec, args [ undefined, 'zeparser@0.0.5', [ 'zeparser@0.0.5', null ] ]
+verbose parsed url { pathname: 'zeparser@0.0.5',
+verbose parsed url   path: 'zeparser@0.0.5',
+verbose parsed url   href: 'zeparser@0.0.5' }
+silly cache add: name, spec, args [ 'zeparser', '0.0.5', [ 'zeparser', '0.0.5' ] ]
+verbose parsed url { pathname: '0.0.5', path: '0.0.5', href: '0.0.5' }
+verbose addNamed [ 'zeparser', '0.0.5' ]
+verbose addNamed [ '0.0.5', '0.0.5' ]
+verbose raw, before any munging zeparser/0.0.5
+verbose url resolving [ 'https://registry.npmjs.org/', './zeparser/0.0.5' ]
+verbose url resolved https://registry.npmjs.org/zeparser/0.0.5
+http GET https://registry.npmjs.org/zeparser/0.0.5
+silly afterUntar undefined
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/.npmignore
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/.travis.yml
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/binding.gyp
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/History.md
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/index.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/make.bat
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/Makefile
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/package.json
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/README.md
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/wscript
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/bench
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/bench/parser.benchmark.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/bench/sender.benchmark.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/bench/speed.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/bench/util.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/doc
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/doc/ws.md
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/bin
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/bin/wscat
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/lib
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/lib/BufferPool.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/lib/BufferUtil.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/lib/BufferUtilWindows.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/lib/ErrorCodes.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/lib/Receiver.hixie.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/lib/Receiver.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/lib/Sender.hixie.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/lib/Sender.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/lib/Validation.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/lib/ValidationWindows.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/lib/WebSocket.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/lib/WebSocketServer.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/src
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/src/validation.cc
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/src/bufferutil.cc
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/test
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/test/autobahn-server.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/test/autobahn.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/test/BufferPool.test.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/test/hybi-common.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/test/Receiver.hixie.test.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/test/Receiver.test.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/test/Sender.hixie.test.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/test/Sender.test.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/test/testserver.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/test/Validation.test.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/test/WebSocket.integration.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/test/WebSocket.test.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/test/WebSocketServer.test.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/test/fixtures
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/test/fixtures/certificate.pem
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/test/fixtures/key.pem
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/test/fixtures/request.pem
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/test/fixtures/textfile
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/examples
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/examples/fileapi
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/examples/fileapi/.npmignore
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/examples/fileapi/package.json
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/examples/fileapi/server.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/examples/fileapi/public
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/examples/fileapi/public/app.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/examples/fileapi/public/index.html
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/examples/fileapi/public/uploader.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/examples/serverstats
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/examples/serverstats/package.json
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/examples/serverstats/server.js
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/examples/serverstats/public
+silly asyncMap in gTP /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package/examples/serverstats/public/index.html
+verbose gunzed /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package
+verbose rm'ed /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws
+verbose renamed [ '/Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/___ws.npm/package',
+verbose renamed   '/Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws' ]
+verbose has wscript [ undefined,
+verbose has wscript   { file: '/Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/package.json',
+verbose has wscript     contributors: false,
+verbose has wscript     serverjs: false,
+verbose has wscript     wscript: true } ]
+verbose caching /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/package.json
+verbose loadDefaults ws@0.4.12
+info preinstall ws@0.4.12
+verbose unsafe-perm in lifecycle false
+verbose Setting uid from 0 501
+verbose stack at uid setting Error
+verbose stack at uid setting     at exec (/usr/local/lib/node_modules/npm/lib/utils/exec.js:35:17)
+verbose stack at uid setting     at Array.0 (/usr/local/lib/node_modules/npm/lib/utils/lifecycle.js:141:5)
+verbose stack at uid setting     at EventEmitter._tickCallback (node.js:192:40)
+silly exec sh "-c" "make"
+silly spawning [ 'sh',
+silly spawning   [ '-c', 'make' ],
+silly spawning   '/Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws' ]
+info ws@0.4.12 Failed to exec preinstall script
+ERR! error installing ws@0.4.12
+info unbuild /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws
+verbose from cache /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/package.json
+info preuninstall ws@0.4.12
+info uninstall ws@0.4.12
+verbose unbuild ws@0.4.12 [ false,
+verbose unbuild ws@0.4.12   '/Users/remkoboschker/apps/remedy/node_modules',
+verbose unbuild ws@0.4.12   '/Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules' ]
+verbose binRoot [ '/Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/.bin',
+verbose binRoot   { wscat: './bin/wscat' } ]
+info postuninstall ws@0.4.12
+verbose installOne cb ws@0.4.12
+verbose about to build /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client
+ERR! error installing socket.io-client@0.9.5
+info unbuild /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client
+verbose from cache /Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/package.json
+info preuninstall socket.io-client@0.9.5
+info uninstall socket.io-client@0.9.5
+verbose unbuild socket.io-client@0.9.5 [ false,
+verbose unbuild socket.io-client@0.9.5   '/Users/remkoboschker/apps/remedy/node_modules',
+verbose unbuild socket.io-client@0.9.5   '/Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules' ]
+info postuninstall socket.io-client@0.9.5
+ERR! error rolling back socket.io-client@0.9.5 Error: UNKNOWN, unknown error '/Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/test/unit/compress/test'
+verbose installOne cb socket.io-client@0.9.5
+verbose about to build /Users/remkoboschker/apps/remedy/node_modules/socket.io
+ERR! error installing socket.io@0.9.5
+info unbuild /Users/remkoboschker/apps/remedy/node_modules/socket.io
+verbose from cache /Users/remkoboschker/apps/remedy/node_modules/socket.io/package.json
+info preuninstall socket.io@0.9.5
+info uninstall socket.io@0.9.5
+verbose unbuild socket.io@0.9.5 [ true,
+verbose unbuild socket.io@0.9.5   '/Users/remkoboschker/apps/remedy/node_modules',
+verbose unbuild socket.io@0.9.5   '/Users/remkoboschker/apps/remedy/node_modules' ]
+info postuninstall socket.io@0.9.5
+ERR! error rolling back socket.io@0.9.5 Error: UNKNOWN, unknown error '/Users/remkoboschker/apps/remedy/node_modules/socket.io/node_modules/socket.io-client/node_modules/___uglify-js.npm/package/test/unit/compress/test'
+verbose installOne cb socket.io@0.9.5
+ERR! ws@0.4.12 preinstall: `make`
+ERR! `sh "-c" "make"` failed with 127
+ERR! 
+ERR! Failed at the ws@0.4.12 preinstall script.
+ERR! This is most likely a problem with the ws package,
+ERR! not with npm itself.
+ERR! Tell the author that this fails on your system:
+ERR!     make
+ERR! You can get their info via:
+ERR!     npm owner ls ws
+ERR! There is likely additional logging output above.
+ERR! 
+ERR! System Darwin 11.3.0
+ERR! command "node" "/usr/local/bin/npm" "install" "socket.io"
+ERR! cwd /Users/remkoboschker/apps/remedy
+ERR! node -v v0.6.11
+ERR! npm -v 1.1.1
+ERR! code ELIFECYCLE
+ERR! message ws@0.4.12 preinstall: `make`
+ERR! message `sh "-c" "make"` failed with 127
+ERR! errno {}
+verbose exit [ 1, true ]

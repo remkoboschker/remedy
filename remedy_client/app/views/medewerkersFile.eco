@@ -1,0 +1,179 @@
+<div class="pull-right">
+   <a class="btn" id="deleteEmployee"><i class="icon-minus"></i></a>
+ </div>
+<h3><%= @fullName() %></h3>
+<hr>
+<div class="row-fluid">
+  <div class="span4">                   
+    <img src="img/medewerkers/<%= @id %>.jpg" width="284px" alt="">
+  </div><!--span-->
+  <div class="span4">
+    <table class="table table-striped table-bordered">
+      <thead>
+        <tr>
+          <th>telefoon</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>werk</th>
+          <td><%= @tel_werk %></td>
+        </tr>
+        <tr>
+          <th>prive</th>
+          <td><%= @tel_prive %></td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="table table-striped table-bordered">
+     <thead>
+      <tr>
+        <th>ice</th>
+      </tr>
+     </thead>
+     <tbody>
+       <tr>
+       <th>naam</th>
+          <td><%= @ice_naam %></td>
+        </tr>
+        <tr>
+          <th>relatie</th>
+          <td><%= @ice_relatie %></td>
+        </tr>
+        <tr>
+          <th>telefoon</th>
+          <td><%= @ice_tel %></td>
+        </tr>
+      </tbody>
+    </table>
+     <table class="table table-striped table-bordered">
+  <thead>
+  <tr>
+    <th>persoon</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <th>initialen</th>
+    <td><%= @initialen %></td>
+  </tr>
+  <tr>
+    <th>voornaam</th>
+    <td><%= @voornaam %></td>
+  </tr>
+  <tr>
+    <th>achternaam</th>
+    <td><%= @achternaam %></td>
+  </tr>
+  <tr>
+    <th>meisjesnaam</th>
+    <td><%= @meisjesnaam %></td>
+  </tr>
+  <tr>
+    <th>geb. datum</th>
+    <td><%= @geboortedatum %></td>
+  </tr>
+  <tr>
+    <th>geslacht</th>
+    <td><%= @geslacht %></td>
+  </tr>
+  <tr>
+    <th>bsn</th>
+    <td><%= @bsn %></td>
+  </tr>
+  <tr>
+    <th>legitimatie</th>
+    <td><%= @legitimatie %></td>
+  </tr>
+  <tr>
+    <th>profielfoto</th>
+    <td><%= @profielfoto %></td>
+  </tr>
+  </tbody>
+  </table>
+  </div><!--span-->
+  <div class="span4">
+          <table class="table table-striped table-bordered">
+      <thead>
+        <tr>
+          <th>email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>werk</th>
+          <td><%= @mail_werk %></td>
+        </tr>
+        <tr>
+          <th>prive</th>
+          <td><%= @mail_prive %></td>
+        </tr>
+      </tbody>
+    </table>
+   <table class="table table-striped table-bordered">
+      <thead>
+      <tr>
+        <th>adres</th>
+      </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>straat</th>
+          <td><%= @straat %></td>
+        </tr>
+          <tr>
+            <th>huisnummer</th>
+            <td><%= @huisnummer %></td>
+          </tr>
+            <tr>
+              <th>huisnummer toevoeging</th>
+              <td><%= @huisnummer_toevoeging %></td>
+            </tr>
+        <tr>
+          <th>postcode</th>
+          <td><%= @postcode %></td>
+        </tr>
+          <tr>
+            <th>woonplaats</th>
+            <td><%= @woonplaats %></td>
+          </tr>
+        <tr>
+          <th>land</th>
+          <td><%= @land %></td>
+        </tr>
+        </tbody>
+      </table>
+  <table class="table table-striped table-bordered">
+  <thead>
+  <tr>
+  <th>personeelszaken</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+  <th>rol</th>
+  <td><%= @rol %></td>
+  </tr>
+  <tr>
+  <th>bankrekening</th>
+  <td><%= @bankrekening %></td>
+  </tr>
+  <tr>
+  <th>in dienst</th>
+  <td><%= @in_dienst %></td>
+  </tr>
+  <tr>
+  <th>uit dienst</th>
+  <td><%= @uit_dienst %></td>
+  </tr>
+  <tr>
+  <th>c.v.</th>
+  <td><%= @cv %></td>
+  </tr>
+  <tr>
+  <th>contract</th>
+  <td><%= @contract %></td>
+  </tr>
+  </tbody>
+  </table>
+  </div><!--span-->
