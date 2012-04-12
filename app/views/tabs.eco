@@ -1,8 +1,0 @@
-<ul class="nav nav-tabs tabs">
-	<li data-name="medewerkers"><a>medewerkers</a></li>
-	<li data-name="placeholder"><a>placeholder</a></li>
-</ul>
-<div id="myTabContent" class="tab-content">
-  <div class="tab-pane medewerkers row-fluid"></div>
-  <div class="tab-pane placeholder row-fluid"></div>
-<div>

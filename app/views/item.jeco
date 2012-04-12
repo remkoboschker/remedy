@@ -1,3 +1,0 @@
-<div class="item">
-  <%= @voornaam or "pl" %>
-</div>
