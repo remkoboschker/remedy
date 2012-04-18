@@ -21,15 +21,11 @@ class TableRow extends Spine.Controller
   constructor: ->
     super
     
-  render: (id, type, attr, val) ->
-    @item = Medewerker.find(id)
-    @name = attr
-    @type = type
-    @label = Medewerker.label[type][attr]
-    @val = val
+  render: ->  
+    @label = Medewerker.label[@groupName][@attr] 
     @html require('views/tableRow')(@)
     @input = require('views/tdInput')(@)
-    @el.attr("id", attr)
+    @el.attr("id", @attr)
     
   setInput: ->
     if not @editing
@@ -40,18 +36,19 @@ class TableRow extends Spine.Controller
       @editing = true
       
   removeInput: ->
+    @log @td
     @store()
     if @td.has('input') isnt 0
       @td.empty()
       @td.removeClass()
-    @td.append @item[@type][@name]
+    @td.append @file[@groupName][@attr]
     @editing = false
     
   store: ->
-    if @item[@type][@name] isnt @input.val()
-      @item[@type][@name] = @input.val()
-      @log @item.id
-      @item.save()
+    if Medewerker.can["u"] and @file[@groupName][@attr] isnt @input.val()
+        @file[@groupName][@attr] = @input.val()
+        @log 'save'
+        @file.save()
   
   #pressing the return key saves the input to the store and replaces the input with the td
   #pressing shift-return or tab saves the input and sets the input for the next table row; if there 

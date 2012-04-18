@@ -6,7 +6,6 @@ MedewerkersLijstItem = require('controllers/medewerkersLijstItem')
 MedewerkersFile = require('controllers/medewerkersFile')
 List    = require('lib/list')
 $       = Spine.$
-dataObjects = require('lib/dataObjects')
 
 class MedewerkersSidebar extends Spine.Controller
 
@@ -17,7 +16,7 @@ class MedewerkersSidebar extends Spine.Controller
     "input[type=search]": "search"
   
   events:
-   "click #createEmployee": "new"
+   'click #createEmployee': 'create'
    'keyup input[type=search]': 'filter'
    'ready': 'resize'
   
@@ -34,6 +33,8 @@ class MedewerkersSidebar extends Spine.Controller
     @list.bind 'change', @change
 
     @active (params) -> 
+      @log 'const'
+      @log params.id
       @list.change(Medewerker.find(params.id))
 
     Medewerker.bind('refresh change', @render)
@@ -52,10 +53,42 @@ class MedewerkersSidebar extends Spine.Controller
   change: (item) =>
     @navigate '/admin/medewerkers', item.id
 
-  new: ->
+  create: ->
     if Medewerker.can["c"]
-      item = Medewerker.create photo: dataObjects.photo, personal: dataObjects.personal, tel: dataObjects.tel, mail: dataObjects.mail, ice: dataObjects.ice, address: dataObjects.address, employed: dataObjects.employed
-    #initialen: 'initialen', voornaam: 'voornaam', achternaam: 'achternaam', meisjesnaam: 'meisjesnaam', geboortedatum: 'dd/mm/jjjj', geslacht: 'geslacht', bsn: 'bsn', legitimatie: 'legitimatie', profielfoto: 'upload', tel_werk: 'tel_werk', tel_prive: 'tel_prive',  mail_werk: 'mail_werk', mail_prive: 'mail_prive', ice_tel: 'ice_tel', ice_naam: 'ice_naam', ice_relatie: 'ice_relatie', straat: 'straat', huisnummer: 'huisnummer', huisnummer_toevoeging: 'huisnummer_toevoeging', postcode: '1234 AB', woonplaats: 'woonplaats', land: 'land', rol: 'rol', bankrekening: 'bankrekening', in_dienst: 'dd/mm/jjjj', uit_dienst: 'dd/mm/jjjj', cv: 'upload', contract: 'upload')   
+      item = Medewerker.create
+        personal:
+          initials: 'initialen'
+          givenName: 'voornaam'
+          familyName: 'achternaam'
+          dateOfBirth: 'geboortedatum'
+          sex: 'geslacht'
+          idNumber: 'bsn'
+          idDocument: 'legitimatie'
+        photo: 'profielfoto'  
+        tel:    
+          work: 'tel_werk'
+          private: 'tel_prive'
+        mail:
+          work: 'mail_werk'
+          private: 'mail_prive' 
+        ice:
+          tel: 'ice_tel'
+          name: 'ice_naam'
+          relation: 'ice_relatie'
+        address:
+          street: 'straat'
+          number: 'huisnummer'
+          extension: 'huisnummer_toevoeging'
+          postalcode: 'postcode'
+          city: 'woonplaats'
+          country: 'land'
+        employed:
+          role: 'rol'
+          bankAccountNumber: 'bankrekening'
+          inService: 'in_dienst'
+          outService: 'uit_dienst'
+          cv: 'cv'
+          contract: 'contract'
       @navigate '/admin/medewerkers', item.id
     else
       alert 'permission denied'

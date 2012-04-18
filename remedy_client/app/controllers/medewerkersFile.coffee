@@ -13,25 +13,20 @@ class MedewerkersFile extends Spine.Controller
     "#column3": "column3"
   
   events:
-    "click #deleteEmployee": "delete"
-    "blur #initials": "updateTitle"
-    #"click #givenName": "updateTitle"
-    #"click #familyName": "updateTitle"
+    'click #deleteEmployee': 'delete'
     
   constructor: ->
     super
     @active @change
-
+    
   render: ->
     tables = {}
-    passphoto = require('views/passphoto')(@item)
-    @html require('views/file')(@item)
-    #@column1.append passphoto
+    @html require('views/file')(@file)
     
-    for attr, val of @item.attributes()
+    for attr, val of @file.attributes()
       if attr isnt "id" and attr isnt "photo" and Medewerker.can[attr]["r"]
-        table = new Table
-        table.render @id, attr, val
+        table = new Table file: @file, groupName: attr, group: val
+        table.render()
         tables[attr] = table.el #if two have the same name should raise error
     @layouter(tables)
         
@@ -45,19 +40,18 @@ class MedewerkersFile extends Spine.Controller
       @column3.append(tables[table]) if tables[table]?
       
   updateTitle: ->
-    @log 'updateTitel'
     $('#fileTitle').empty()
     $('#fileTitle').append(@item.fullName())
   
   change: (params) =>
-    @id = params.id
-    @item = Medewerker.find(@id)
+    @file = Medewerker.find(params.id)
     @render()
   
   delete: ->
     if Medewerker.can["d"] 
-      @item.destroy() if confirm('Weet je zeker dat je het bestand wil verwijderen?')
+      @file.destroy() if confirm('Weet je zeker dat je het bestand wil verwijderen?')
     else
       alert 'permission denied'
+      
     
 module.exports = MedewerkersFile

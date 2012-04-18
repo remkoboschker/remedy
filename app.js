@@ -5,7 +5,8 @@
 
 var express = require('express')
   , routes = require('./routes')
-  , fs = require('fs');
+  , fs = require('fs')
+  , mongoose = require('mongoose');
   
 var options = {
     key: fs.readFileSync('./cert/server-key.pem'),
@@ -42,6 +43,13 @@ app.configure('development', function(){
 app.configure('production', function(){
   app.use(express.errorHandler());
 });
+
+// Mongoose
+
+mongoose.connect('mongodb://localhost/remedyDB');
+var Employee = mongoose.model('Employee');
+
+
 
 // Routes
 
