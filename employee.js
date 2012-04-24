@@ -1,40 +1,58 @@
-var mongoose = require('mongoose')
-,   Schema = mongoose.Schema;
+var mongoose = require('mongoose'),
+    Schema = mongoose.Schema;
 
-employeeSchema = new Schema({
+var employeeSchema = new Schema({
     personal: {
-      initials: 'initialen'
-      givenName: 'voornaam'
-      familyName: 'achternaam'
-      dateOfBirth: 'geboortedatum'
-      sex: 'geslacht'
-      idNumber: 'bsn'
-      idDocument: 'legitimatie'
+        initials: {type: String, default: 'initialen'},
+        givenName: {type: String, default: 'voornaam'},
+        familyName: {type: String, default: 'achternaam'},
+        dateOfBirth: {type: String, default: 'geboortedatum'},
+        sex: {type: String, default: 'geslacht'},
+        idNumber: {type: String, default: 'bsn'},
+        idDocument: {type: String, default: 'legitimatie'}
     },
-    photo: 'profielfoto'  
-    tel:    
-      work: 'tel_werk'
-      private: 'tel_prive'
-    mail:
-      work: 'mail_werk'
-      private: 'mail_prive' 
-    ice:
-      tel: 'ice_tel'
-      name: 'ice_naam'
-      relation: 'ice_relatie'
-    address:
-      street: 'straat'
-      number: 'huisnummer'
-      extension: 'huisnummer_toevoeging'
-      postalcode: 'postcode'
-      city: 'woonplaats'
-      country: 'land'
-    employed:
-      role: 'rol'
-      bankAccountNumber: 'bankrekening'
-      inService: 'in_dienst'
-      outService: 'uit_dienst'
-      cv: 'cv'
-      contract: 'contract'
-    
-})
+    photo: {
+        type: String, default: 'profielfoto'},  
+    tel: {   
+        work: {type: String, default: 'tel_werk'},
+        private: {type: String, default: 'tel_prive'}
+    },
+    mail: {
+        work: {type: String, default: 'mail_werk'},
+        private: {type: String, default: 'mail_prive'}
+    },
+    ice: {
+        tel: {type: String, default: 'ice_tel'},
+        name: {type: String, default: 'ice_naam'},
+        relation: {type: String, default: 'ice_relatie'}
+    },
+    address: {
+        street: {type: String, default: 'straat'},
+        number: {type: String, default: 'huisnummer'},
+        extension: {type: String, default: 'huisnummer_toevoeging'},
+        postalcode: {type: String, default: 'postcode'},
+        city: {type: String, default: 'woonplaats'},
+        country: {type: String, default: 'land'}
+    },
+    employed: {
+        role: {type: String, default: 'rol'},
+        bankAccountNumber: {type: String, default: 'bankrekening'},
+        inService: {type: String, default: 'in_dienst'},
+        outService: {type: String, default: 'uit_dienst'},
+        cv: {type: String, default: 'cv'},
+        contract: {type: String, default: 'contract'}
+    }   
+});
+
+employeeSchema.methods.toSpine = function () {
+  var obj = this.toObject();
+  obj.id = obj._id;
+  delete obj._id;
+  return obj;
+}
+
+mongoose.connect('mongodb://localhost/remedyDB');
+mongoose.model('Employee', employeeSchema);
+mongoose.disconnect();
+
+module.exports = mongoose.model('Employee');

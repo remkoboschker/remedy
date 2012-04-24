@@ -1,4 +1,7 @@
-fs = require('fs')
+var fs = require('fs');
+ 
+    
+
 
 exports.index = function(req, res){
   res.render('index', { title: 'Express' })
@@ -30,6 +33,19 @@ exports.client = function(req, res){
 };
 
 exports.api = function(req, res){
+    // Mongoose
+
+    var employee = new Employee();
+
+    employee.personal.givenName = 'Remko';
+
+    employee.save(function(err){
+        if (err) {throw err;}
+        //console.log('saved');
+        mongoose.disconnect();
+    });
+    
+    
     //console.log('Client Certificate');
     //var clientCert = req.connection.getPeerCertificate();
     //console.log(clientCert);
@@ -40,3 +56,9 @@ exports.api = function(req, res){
     //}
     
 };
+
+exports.employees = function(req, res){
+    console.log('employees');
+    console.log(req.body);
+};
+

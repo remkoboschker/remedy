@@ -6,7 +6,10 @@ class Medewerker extends Spine.Model
     
   @configure 'Medewerker', 'personal', 'tel', 'mail', 'ice', 'address', 'employed', 'photo'
 
-  @extend @Local
+  @extend @Ajax
+  @url: '/api/employees'
+  
+  console.log @url
   
   @can = permissions['admin']['employee']
     

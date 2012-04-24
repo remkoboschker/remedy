@@ -3,10 +3,10 @@
  * Module dependencies.
  */
 
-var express = require('express')
-  , routes = require('./routes')
-  , fs = require('fs')
-  , mongoose = require('mongoose');
+var express = require('express'),
+    routes = require('./routes'),
+    api = require('./routes/api')
+    fs = require('fs');
   
 var options = {
     key: fs.readFileSync('./cert/server-key.pem'),
@@ -36,30 +36,27 @@ app.configure(function(){
 });
 
 app.configure('development', function(){
-  app.use(express.errorHandler({ dumpExceptions: true, showStack: true }));
-  app.use(express.logger());
+    app.use(express.errorHandler({ dumpExceptions: true, showStack: true }));
+    app.use(express.logger());   
 });
-
+   
 app.configure('production', function(){
   app.use(express.errorHandler());
 });
 
-// Mongoose
-
-mongoose.connect('mongodb://localhost/remedyDB');
-var Employee = mongoose.model('Employee');
-
-
-
 // Routes
-
 app.get('/', routes.index);
 app.get('/product', routes.product);
 app.get('/regelingen', routes.regelingen);
 app.get('/admin', routes.admin);
 app.get('/client', routes.client);
-app.get('/api', routes.api);
+app.post('/api/employees', api.employees.create);
+app.get('/api/employees', api.employees.read);
+app.put('/api/employees', api.employees.update);
+app.delete('/api/employees', api.employees.destroy);
+//app.get('/api', routes.api);
 app.get('/ondersteuning', routes.ondersteuning);
+
 
 app.listen(3000, function(){
   console.log("Express server listening on port %d in %s mode", app.address().port, app.settings.env);
