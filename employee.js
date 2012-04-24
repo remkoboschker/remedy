@@ -51,8 +51,4 @@ employeeSchema.methods.toSpine = function () {
   return obj;
 }
 
-mongoose.connect('mongodb://localhost/remedyDB');
-mongoose.model('Employee', employeeSchema);
-mongoose.disconnect();
-
-module.exports = mongoose.model('Employee');
+module.exports = mongoose.model('Employee', employeeSchema);

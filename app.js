@@ -5,7 +5,7 @@
 
 var express = require('express'),
     routes = require('./routes'),
-    api = require('./routes/api')
+    api = require('./routes/api'),
     fs = require('fs');
   
 var options = {
@@ -52,8 +52,8 @@ app.get('/admin', routes.admin);
 app.get('/client', routes.client);
 app.post('/api/employees', api.employees.create);
 app.get('/api/employees', api.employees.read);
-app.put('/api/employees', api.employees.update);
-app.delete('/api/employees', api.employees.destroy);
+app.put('/api/employees/:id', api.employees.update);
+app.delete('/api/employees/:id', api.employees.destroy);
 //app.get('/api', routes.api);
 app.get('/ondersteuning', routes.ondersteuning);
 

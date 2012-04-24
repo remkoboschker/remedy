@@ -32,33 +32,3 @@ exports.client = function(req, res){
     res.end(client);
 };
 
-exports.api = function(req, res){
-    // Mongoose
-
-    var employee = new Employee();
-
-    employee.personal.givenName = 'Remko';
-
-    employee.save(function(err){
-        if (err) {throw err;}
-        //console.log('saved');
-        mongoose.disconnect();
-    });
-    
-    
-    //console.log('Client Certificate');
-    //var clientCert = req.connection.getPeerCertificate();
-    //console.log(clientCert);
-    //if(req.client.authorized){
-    //    res.render('index', { title: 'API', name: clientCert.subject.CN })
-    //} else {
-    //    res.render('index', { title: 'unauthorized'})
-    //}
-    
-};
-
-exports.employees = function(req, res){
-    console.log('employees');
-    console.log(req.body);
-};
-

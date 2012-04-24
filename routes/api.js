@@ -1,41 +1,87 @@
 var mongoose = require('mongoose'),
     Employee = require('../employee');
+    _ = require('underscore')
+
+//connect to db and leave open untill an error occurs or shutdown is called    
+mongoose.connect('mongodb://localhost/remedyDB');
+
+var toMongoose = function(source) {
+  var obj = _.clone(source);
+  //obj._id = obj.id; //mod on _id not allowed
+  delete obj.id;
+  return obj;
+};
+
 
 exports.employees = function(req, res){
     console.log('employees');
     //console.log(req.body.personal);
 };
 
-
-exports.employees.create = function(req, res){
-    //create a new employee from Employee model 
-    var employee = new Employee(req.body);
-    //connect to db
-    mongoose.connect('mongodb://localhost/remedyDB');
-     //save employee and close connection
+//create a new employee from Employee model 
+//save employee and close connection
+//return newly created object to the client
+exports.employees.create = function(req, res){   
+    var employee = new Employee(req.body);   
+    
     employee.save(function(err){
         if (err) {throw err;}
-        mongoose.disconnect();
     });
-    
-    //return newly created object to the client
-    //res.head(201, )
-    
-    //res.end(employee)
-    
+         
+    res.json(employee.toSpine(), 201);   
 };
 
 exports.employees.read = function(req, res){
-    mongoose.connect('mongodb://localhost/remedyDB');
-    
-};
+        
+    return Employee.find({}, function(err, docs){
+        
+        var results = [];
+        
+        if (err) {throw err;}
+        
+        for(var i = 0; i < docs.length; i += 1){
+            results.push(docs[i].toSpine());
+        }
 
-exports.employees.update = function(req, res){
-    
-};
+        return res.json(results, 200); 
+    });
+}
 
-exports.employees.destroy = function(req, res){
+exports.employees.update = function(req, res) {
     
-};
+    var conditions;
+    var update      = toMongoose(req.body);
+    var options     = {};
+    
+    if (req.params.id === req.body.id) {
+        conditions = {_id: req.params.id};
+    } else {
+        throw 'url id parameter not valid';
+    }
+    
+    return Employee.update(conditions, update, options, function(err, numAffected) {
+        if (err) {throw err;}
+        if (numAffected > 1) { throw 'too many objects';}
+        return Employee.findById(req.params.id, function(err, doc) {
+            if (!err) {
+                return res.json(doc.toSpine(), 200);
+            } else {
+                throw err;
+            }        
+        });            
+    });
+}
+
+exports.employees.destroy = function(req, res) {
+    return Employee.findById(req.params.id, function(err, doc) {
+        return doc.remove(function(err) {
+            if (!err){
+                res.send();
+            } else { 
+                throw err;
+            }
+        });
+    });
+}
 
 
