@@ -1,10 +1,7 @@
 var fs = require('fs');
- 
-    
-
 
 exports.index = function(req, res){
-  res.render('index', { title: 'Express' })
+  res.render('index', { title: 'Remedy' })
 };
 
 exports.ondersteuning = function(req, res){
@@ -15,20 +12,15 @@ exports.regelingen = function(req, res){
   res.render('index', { title: 'Regelingen' })
 };
 
-exports.product = function(req, res){
-  res.render('index', { title: 'Product' })
-};
-
 exports.admin = function(req, res){
-  res.render('index', { title: 'Admin' })
+  res.render('index', { title: 'Systeembeheer' })
 };
 
 exports.client = function(req, res){
-    console.log('client');
-    var client = fs.readFileSync('./public/client/client.html', 'utf8');
-    res.writeHead(200, {
-        'Content-type': 'text/html; charset = utf-8'
-    });
+    
+    var client = fs.readFileSync('./public/app/client.html', 'utf8');
+    
+    res.writeHead(200, { 'Content-type': 'text/html; charset = utf-8'});
     res.end(client);
 };
 

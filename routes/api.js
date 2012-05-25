@@ -1,5 +1,5 @@
 var mongoose = require('mongoose'),
-    Employee = require('../employee');
+    Employee = require('../models/employee');
     _ = require('underscore')
 
 //connect to db and leave open untill an error occurs or shutdown is called    

@@ -1,0 +1,12 @@
+  <div class="pull-right">
+    <a class="btn" id="create"><i class="icon-plus"></i></a>
+  </div>
+  <h3><%= @title %></h3>
+  <hr>
+  <div class="well">
+    <input class="span11" type="search" placeholder="filter op naam, postcode of geboortedatum" results="0" incremental="true" autofocus>
+    <div class="scroll-area items listitems">
+    </div>
+  </div><!--/.well -->
+
+

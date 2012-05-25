@@ -1,0 +1,25 @@
+<div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container-fluid">
+      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+      <a class="brand" href="#">Dokter Frodo</a>
+      <ul class="nav">
+        <li><a href="agenda.html">agenda</a></li>
+        <li><a href="dossiers.html">dossiers</a></li>
+        <li class="active"><a href="admin.html">admin</a></li>
+      </ul>
+      <div class="nav-collapse">
+        <ul class="nav pull-right">
+		      <li><a href="/systeembeheer">systeembeheer</a></li>
+		      <li><a href="/ondersteuning">helpdesk</a></li>
+ 		      <li><a class="usr">username</a></li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </div>
+</div>
+
