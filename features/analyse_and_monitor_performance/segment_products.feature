@@ -1,5 +1,6 @@
 Feature: Segment products
-    In order to use product types in my revenue and customer segmentation
+    In order to use product types in my revenue segmentation
+    In order to use product types in my customer segmentation
     As a manager
     I want to segment my products
     

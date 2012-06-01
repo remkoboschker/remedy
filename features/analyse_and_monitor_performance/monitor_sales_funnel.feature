@@ -1,5 +1,7 @@
 Feature: Monitor sales funnel
-    In order to predict revenue, improve sales, source leads
+    In order to predict revenue
+    In order to improve sales
+    In order to source leads
     As a manager
     I want to monitor the sales funnel
     
