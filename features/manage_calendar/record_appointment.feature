@@ -4,7 +4,7 @@ Feature: Record appointment
     I want feature
     
     Background:
-        Given 
+        Given the following basic appointment components:
         | time        |
         | date        |
         | changes     |

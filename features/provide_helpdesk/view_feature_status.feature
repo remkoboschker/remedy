@@ -1,4 +1,4 @@
-Feature: View features
+Feature: View features status
     In order to keep track of the progress of the features in the next release
     In order to be aware of any features giving problems
     As a system administrator

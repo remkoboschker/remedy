@@ -1,7 +1,7 @@
-Feature: Check client details
+Feature: Review client details
     In order to maintain accurate records
     as an assistent
-    I want check client details
+    I want to check client details
 
   
 

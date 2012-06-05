@@ -45,6 +45,7 @@ Feature: Add new client
         |               | lungs             |
         |               | neurology         |
         | appointments  | appointments      |
+        | offers        | offers            |
 
       
 

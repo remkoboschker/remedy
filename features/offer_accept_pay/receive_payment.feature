@@ -1,4 +1,4 @@
-Feature: Receive payment at reception
+Feature: Receive payment
     In order to charge clients for the treatments and products they have received
     as an assistent
     I want to receive payment at reception
