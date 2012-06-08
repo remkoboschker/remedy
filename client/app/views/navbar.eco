@@ -8,13 +8,15 @@
       </a>
       <a class="brand" href="#">Dokter Frodo</a>
       <ul class="nav">
-        <li><a href="agenda.html">agenda</a></li>
-        <li><a href="dossiers.html">dossiers</a></li>
+        <li><a href="agenda.html">calendar</a></li>
+        <li><a href="dossiers.html">records</a></li>
+        <li><a href="register.html">register</a></li>
         <li class="active"><a href="admin.html">admin</a></li>
+        <li><a href="intel.html">intel</a></li>
       </ul>
       <div class="nav-collapse">
         <ul class="nav pull-right">
-		      <li><a href="/systeembeheer">systeembeheer</a></li>
+		      <li><a href="/systeembeheer">sysadmin</a></li>
 		      <li><a href="/ondersteuning">helpdesk</a></li>
  		      <li><a class="usr">username</a></li>
         </ul>

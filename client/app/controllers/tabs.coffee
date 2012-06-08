@@ -15,7 +15,7 @@ class Tabs extends Spine.Controller
     @html template
         
     emplyeesTab = new EmployeesTab(el: $(".medewerkers", @el))
-    leveranciersTab = new PlaceholderTab(el: $(".leveranciers", @el))
+    #leveranciersTab = new PlaceholderTab(el: $(".leveranciers", @el))
     #voorraadTab = new PlaceholderTab(el: $(".voorraad", @el))
     #urenregistratieTab = new PlaceholderTab(el: $(".urenregistratie", @el))
     #kasboekTab = new PlaceholderTab(el: $(".kasboek", @el))
@@ -23,11 +23,11 @@ class Tabs extends Spine.Controller
     #winstverliesTab = new PlaceholderTab(el: $(".winstverlies", @el))
     
     
-    new Spine.Manager(medewerkersTab, leveranciersTab, voorraadTab, urenregistratieTab, kasboekTab, balansTab, winstverliesTab)
+    new Spine.Manager(medewerkersTab) #, leveranciersTab, voorraadTab, urenregistratieTab, kasboekTab, balansTab, winstverliesTab)
     
     tab = new Tab(el: $(".tabs", @el))
     tab.connect("medewerkers", medewerkersTab)
-    tab.connect("leveranciers", leveranciersTab)
+    #tab.connect("leveranciers", leveranciersTab)
     #tab.connect("voorraad", voorraadTab)
     #tab.connect("urenregistratie", urenregistratieTab)
     #tab.connect("kasboek", kasboekTab)
