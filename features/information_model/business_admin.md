@@ -5,14 +5,14 @@
 
 <a id="offer"></a>
 ## offer
-1. [treatments](#treatment)
+1. [treatments](medical#treatment)
 2. risks
 3. terms
 4. consent
 5. cost
 6. discount
-7. [client](#client)
-8. [physician](#employee)
+7. [client](parties#client)
+8. [physician](parties#employee)
 
 <a id="employment"></a>
 ## employment

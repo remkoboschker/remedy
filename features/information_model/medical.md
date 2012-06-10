@@ -1,6 +1,6 @@
 <a id="appointment"></a>
 ## appointment
-1. physician
+1. [physician or consultant](parties#employee)
 2. date
 3. time
 4. room
@@ -13,7 +13,7 @@
 11. [treatment plan](#treatment_plan)
 12. [treatment](#treatment)
 13. [checkup](#checkup)
-14. comments
+14. [comments](communications#comment)
 
 
 <a id="intoxication"></a>
@@ -39,22 +39,10 @@
 5. [medical institution](parties#medical_institution)
 
 
-<a id="consultation"></a> 
-## consultation
-1. [history](#history)
-2. [examination](#examination)
-3. [conclusion](#conclusion)
-4. [treatment plan](#treatment_plan)
-5. [appointment](communications#appointment)
-6. note
-
-
 <a id="treatment"></a>
 ## treatment
 1. [treatment type](#treatment_type)
 2. [injections](#injection)
-5. [appointment](communications#appointment)
-6. note
 
 <a id="checkup"></a>
 ## checkup
@@ -110,7 +98,7 @@
 
 <a id="treatment_type"></a>
 ## treatment type
-
+1. description
 
 <a id="product"></a>
 ## product
@@ -124,7 +112,7 @@
 
 <a id="amount_of_product"></a>
 ## amount of product
-
+1. milliliters
 
 <a id="injection_location_name"></a>
 ## injection location name

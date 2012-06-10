@@ -11,7 +11,8 @@
 9. [appointments](medical#appointment)
 10. [offers](business_admin#offer)
 11. [client account](business_admin#client_account)
-12. comments
+12. [physician](parties#employee)
+13. [comments](communications#comment)
 
 <a id="employee"></a>
 ##employee
@@ -24,8 +25,8 @@
 ## supplier
 1. [company](#company)
 2. [telecom](communications#telecom)
-7. [address](communications#address)
-9. [contacts](#contact)
+3. [address](communications#address)
+4. [contacts](#contact)
 
 <a id="medical_institution"></a>
 ## medical institution
