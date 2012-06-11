@@ -4,7 +4,10 @@ Feature: Add history
     I want to record any history the client had provided
     
     The history means the clients story; the reasons, symptoms, wishes the client has provided
+    
+    | description |
+    | symptom     |
+    
    
 
   
-

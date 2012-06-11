@@ -1,1 +1,1 @@
-# Welcome to the Remedy documentation
+The appointments are the basic item where the results of an appointment are recorded. Therefore depending on the type or course of an appointment besides a time, place and physician or consultant it can contain history, examination, conclusion, plan, treatment, checkup or comment. The appointments are attached to a clients record. The will also be accessible through the appointment queue and the calendar.

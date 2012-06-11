@@ -67,7 +67,7 @@
 
 
 <a id='alert'></a>
-## sensitivity
+## alert
 1. type [sensitivity, intollerance, allergy, pregnancy]
 2. description [antibiotics, lidocaine, xylocaine, bruising]
 3. source [patient, relative, physician]
