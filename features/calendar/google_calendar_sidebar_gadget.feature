@@ -42,3 +42,24 @@ Geboortedatum staat nu nog niet altijd ingevoerd, maar wil ik wel graag doorvoer
 Zolang remedy en google calender online zijn, wordt alles direct (per half uur) ge-update begrijp ik, niet alleen nieuwe afspraken, maar ook wijzigingen/annuleringen/no-shows.
 Wijzigingen van afspraken worden direct doorgevoerd, waarbij agenda is aangepast en de wijziging aan 'logboek' van profiel vd klant toegevoegd wordt.
 Hoe zijn een annulering / no show zichtbaar in de calender en hoe wordt dit verwerkt in klantprofiel? Annulering = afspraak die afgemeld is, no-show = afspraak die niet afgemeld is (dus qua tijd tzt 'verloopt')
+
+====remko===============
+Over de no-show en ge-annuleerde afspraken
+
+De google agenda heeft een naar mijn smaak nogal rigide afspraak structuur. Alleen als er via de mail een uitnodiging is opgezet en een genodigde is toegevoegd aan de spraak, kan een afspraak de status confirmed, tentative of cancelled hebben. Je ziet bij cancelled (wanneer een genodigde de afspraak weigert) een streep door de afspraak, wat mooi is. 
+
+Ik zie in de interface niet hoe je anders dit kunt bereiken. Het is wel mogelijk om ook dit via een gadget aan te passen. Als een afspraak wordt ge-cancelled na het tijdstip dat de afspraak had moeten beginnen (of een andere te configureren tijd bijvoorbeeld op dezelfde dag), dan is het een no-show. Dit geeft mooi in de agenda weer dat er iets aan de hand is, maar laat geen onderscheid zien tussen een annulering of een no-show. Dit is wel in het dossier van de klant te zetten. Het is ook mogelijk om de afspraak een kleur code te geven en op die manier aan te geven dat het om een no-show gaat. Mijn voorstel is om een cancel knop op te nemen in de gadget die een streep haalt door een geselecteerde afspraak.
+
+In de afspraken in het dossier van een klant kunnen we een status aangeven. Mogelijk statussen zijn dan: ingeboekt, gewijzigd, geannuleerd, no-show. Deze toestanden zijn afhankelijk van de status (confirmed, tentative of cancelled) en het verschil tussen de tijd waarop de afspraak is aangemaakt en de afspraak is gewijzigd in de google agenda. De 'created' en 'updated' tijden kan ik ook in de interface laten zien, maar ik denk dat het weinig toevoegt en de boel wel nog drukker maakt. Om dezelfde reden zou ik "ingeboekt" ook weglaten en het alleen laten zien als een afspraak is gewijzigd, geannuleerd of no-show. 
+
+
+Over een meta-gegevens veld
+
+Met meta-gegevens bedoel ik gegevens over een klant die niet direct met het primaire proces te maken hebben, maar waar je eenvoudig kunt inzien wat voor klant het is. In eerste instantie denk ik dan aan:
+totaal bedrag besteed
+gemiddeld besteed per kwartaal
+aantal afspraken gehad
+aantal afspraken zonder wijziging
+aantal afspraken gewijzigd
+aantal afspraken ge-annuleerd
+aantal afspraken niet op komen dagen
