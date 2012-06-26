@@ -1,1 +1,0 @@
-These features are concerned with the keeping of client records. These records are partly medical records. Only the basics are included at the moment: search, read, add, update, share. 
