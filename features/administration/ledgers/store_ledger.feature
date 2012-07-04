@@ -1,7 +1,7 @@
-Feature: Keep stock book
-    In order to value
-    as a role
-    I want feature
+Feature: Store ledger
+    In order to keep track of my store
+    as a manager
+    I want a store ledger
 
   
 

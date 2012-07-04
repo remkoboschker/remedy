@@ -3,7 +3,7 @@ Feature: Monitor operations
     As a manager
     I want to see the processing of appointments take place
 
-    Background: dfs
+    Background:
         Given The indicators I want to keep track of for a particular day are:
         | number of appointments per physician           |
         | number of appointments processed per physician |

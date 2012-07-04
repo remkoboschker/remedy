@@ -3,6 +3,8 @@ Feature: Authenticate
     as an user
     I want to prevent others from accessing my account
     
+    A valid certificate is issued by the appointed certificate authority, has not been revoked by that authority and has not expired.
+    
     Scenario:   valid client certificate with my name present
         Given   I have a valid client certificate installed in my browser
         And     the client certificate has my name on it

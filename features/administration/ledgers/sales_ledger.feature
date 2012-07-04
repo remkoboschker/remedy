@@ -1,7 +1,7 @@
-Feature: Update sales ledger
-    In order to value
-    as a role
-    I want feature
+Feature: Sales ledger
+    In order to monitor sales
+    as a manager
+    I want a sales ledger
 
   
 

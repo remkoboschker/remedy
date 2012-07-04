@@ -5,7 +5,7 @@ Feature: Monitor sales funnel
     As a manager
     I want to monitor the sales funnel
     
-    Background: dsfs
+    Background:
         Given the sales funnel shows the number of:
         | leads per source | conversions to an appointment per | conversions to a treatment per | next treatments per |
         | media campaigns  | source                            | physician                      | physician           |
@@ -13,9 +13,4 @@ Feature: Monitor sales funnel
         | discounts        | assistent                         |                                |                     |
         | word of mouth    |                                   |                                |                     |
         | social group     |                                   |                                |                     |
-        
-    Scenario: dfsfsf
-        Given fsfjsdf
-        When obspoibpos bpsdoib spd
-        Then bdsbo dkbj sl sdlbj
-                            
+  

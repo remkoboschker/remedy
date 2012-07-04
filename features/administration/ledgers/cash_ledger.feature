@@ -1,7 +1,7 @@
-Feature: Keep cash book
-    In order to value
-    as a role
-    I want feature
+Feature: Cash ledger
+    In order to manage all the cash
+    as a manager
+    I want a cash ledger
 
   
 

@@ -12,6 +12,5 @@ Feature: Segment treatments
         | possible complications   |
         | registered complications |
     
-    Scenario: test
     
    

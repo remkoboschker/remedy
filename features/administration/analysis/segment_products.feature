@@ -4,7 +4,7 @@ Feature: Segment products
     As a manager
     I want to segment my products
     
-    Background:dfs
+    Background:
         Given Products can be segemented by:
         | brand           |
         | group           |
@@ -18,9 +18,5 @@ Feature: Segment products
         | Juvederm  |
         | Sculptra  |
         | Carboxy   |
-        
-    Scenario: dsfdf
-        Given fsfs
-        When egjsdjga gsalkjgl sa
-        Then dpsofjslkdf lsdfmls
+
   

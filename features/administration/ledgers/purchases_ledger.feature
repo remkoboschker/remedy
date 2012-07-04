@@ -1,7 +1,7 @@
-Feature: Update purchases ledger
-    In order to value
-    as a role
-    I want feature
+Feature: Purchases ledger
+    In order to monitor purchases
+    as a manager
+    I want a purchases ledger
 
   
 

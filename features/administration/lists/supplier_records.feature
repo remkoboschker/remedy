@@ -1,7 +1,7 @@
-Feature: Keep supplier records
-    In order to value
-    as a role
-    I want feature
+Feature: Supplier records
+    In order to keep de details of the suppliers
+    as a manager
+    I want supplier records
 
   
 
